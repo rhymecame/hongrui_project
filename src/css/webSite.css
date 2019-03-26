@@ -1,0 +1,86 @@
+.logo{
+    align-items: center;
+    display: flex;
+}
+
+.logo img{
+    width: 48px;
+    height: 48px;
+}
+
+.logo span{
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.register{
+    float:right !important;
+}
+
+.topcontainer{
+    padding-top: 10px;
+    height: 535px;
+}
+/* .topimghandle{
+    width: 100%;
+    height:535px;
+    display: block;
+} */
+
+.midcontainer{
+    padding-top: 10px;
+}
+
+.leftContainer{
+    width: 691px;
+    height:454px;
+    float: left;
+}
+
+.carousel2{
+    width: 691px;
+    height:454px;
+    float: left;
+}
+
+
+.imghandle{
+    width:100%;
+    height:454px;
+    display: block;
+}
+
+.newsList{
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    margin-top: -6px;
+}
+
+.tabs_news{
+    padding-left: 10px;
+    width:438px;
+    float: left;
+}
+
+/* .ant-card{
+    margin-top: 5px !important;
+} */
+
+.rowstyl{
+    margin-top: 5px !important;
+}
+
+.ulstyl{
+    margin-top: -15px;
+    margin-left: -25px;
+}
+
+.ant-card-body{
+    width: 426px;
+    height: 398px;
+}
