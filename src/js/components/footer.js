@@ -4,14 +4,26 @@ import styles from '../../css/webSite.css';
 
 
 export default class Footer extends React.Component{
+    
     render(){
+        let footer={
+            backgroundColor: '#333333',
+            height: '80px',
+
+        }
+
+        let info={
+            color: '#ffffff',
+            marginTop: '40px',
+        }
         return(
-            <footer>
+            <footer style={footer}>
                 <Row>
                     <Col span={2}></Col>
-                    <Col span={20} class="footer">
-                        &copy;&nbsp;2019 宏瑞建筑.All Right Reserved.
-                        
+                    <Col span={20} class="footer" >
+                        <div style={info}>
+                            Copyright &copy;&nbsp;2019 北京宏瑞基业建筑工程有限公司  地址：北京市大兴区兴华大街（二段）3号院3号楼1层117 电话：010-61198036
+                        </div>
                     </Col>
                     <Col span={2}></Col>
                 </Row>

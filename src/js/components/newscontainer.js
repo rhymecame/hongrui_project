@@ -3,6 +3,8 @@ import {Row,Col} from 'antd';
 import {Tabs,Carousel} from 'antd';
 import styles from '../../css/webSite.css';
 import NewsBlock from './news_block';
+import BussinessShower from './bussiness_shower';
+import ImgScoller from './img_slider';
 const TabPane = Tabs.TabPane;
 export default class NewContainer extends React.Component{
     render(){
@@ -62,6 +64,8 @@ export default class NewContainer extends React.Component{
                     </Col>
                     <Col span={2}/>
                 </Row>
+                <BussinessShower></BussinessShower>
+                <ImgScoller/>
             </div>
         );
 
