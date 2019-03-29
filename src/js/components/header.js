@@ -65,30 +65,27 @@ class Header extends React.Component{
                         </a>
                     </Col>
                     <Col span={19}>
-                        <Menu mode="horizontal" onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]}>
+                        <Menu class="menuPosition" mode="horizontal" onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]}>
                             <Menu.Item key="hongrui">
-                                <Icon type="appstore"/>关于宏瑞
+                                <Icon type="appstore"/>首页
                             </Menu.Item>
                             <Menu.Item key="newcenter">
-                                <Icon type="appstore"/>新闻中心
+                                <Icon type="appstore"/>关于宏瑞
                             </Menu.Item>
                             <Menu.Item key="dangjian">
-                                <Icon type="appstore"/>党的建设
+                                <Icon type="appstore"/>旗下产业
                             </Menu.Item>
                             <Menu.Item key="yewu">
-                                <Icon type="appstore"/>业务领域
+                                <Icon type="appstore"/>新闻中心
                             </Menu.Item>
                             <Menu.Item key="science">
-                                <Icon type="appstore"/>科技创新
+                                <Icon type="appstore"/>企业文化
                             </Menu.Item>
                             <Menu.Item key="culture">
-                                <Icon type="appstore"/>文化品牌
-                            </Menu.Item>
-                            <Menu.Item key="hr">
                                 <Icon type="appstore"/>人力资源
                             </Menu.Item>
-                            <Menu.Item key="zhuanti">
-                                <Icon type="appstore"/>专题专栏
+                            <Menu.Item key="hr">
+                                <Icon type="appstore"/>联系我们
                             </Menu.Item>
                             {userShow}
                         </Menu>

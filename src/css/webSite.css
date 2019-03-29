@@ -57,7 +57,7 @@
 .newsList{
     float: left;
     text-align: left;
-    font-size: 14px;
+    font-size: 20px !important;
     margin-top: -6px;
 }
 
@@ -83,4 +83,13 @@
 .ant-card-body{
     width: 426px;
     height: 398px;
+}
+
+.newsTitle{
+    font-size: 20px !important;
+}
+
+.menuPosition{
+    margin-left: 60px;
+
 }
