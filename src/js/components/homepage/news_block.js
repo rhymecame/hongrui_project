@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from 'antd';
 import {Router,Route,Link,browserHistory} from 'react-router';
-import styles from '../../css/webSite.css';
+import styles from '../../../css/webSite.css';
 
 export default class NewsBlock extends React.Component{
     constructor(){

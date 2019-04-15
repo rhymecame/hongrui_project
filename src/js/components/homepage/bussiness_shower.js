@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Card, Divider, List, Menu, Carousel, Collapse } from 'antd';
-import styles from '../../css/webSite.css';
+import styles from '../../../css/webSite.css';
 import { element } from 'prop-types';
 
 

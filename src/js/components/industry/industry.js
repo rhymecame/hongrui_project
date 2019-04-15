@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from '../public_components/header';
+import Footer from '../public_components/footer';
 export default class Industry extends React.Component {
 
     render(){

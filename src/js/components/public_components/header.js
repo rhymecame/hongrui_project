@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row,Col, Modal} from 'antd';
 import {Menu,Icon,Tabs,message,Form,Input,Button,Checkbox} from 'antd';
-import styles from '../../css/webSite.css';
+import styles from '../../../css/webSite.css';
 import {Link} from 'react-router';
 const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
@@ -89,7 +89,7 @@ class Header extends React.Component{
                                 人力资源
                             </Menu.Item>
                             <Menu.Item key="hr">
-                                联系我们
+                            <Link to="/contact_us">联系我们</Link>
                             </Menu.Item>
                             {/* {userShow} */}
                         </Menu>
