@@ -53,8 +53,6 @@ export default class NewContainer extends React.Component{
                                 <NewsBlock width="100%" bordered="false"></NewsBlock>
 
                             </TabPane>
-                           
-                            
                             
                         </Tabs>
                     </Col>

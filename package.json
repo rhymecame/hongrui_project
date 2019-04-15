@@ -19,7 +19,7 @@
     "fetch": "^1.1.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router": "^5.0.0",
+    "react-router": "3.x",
     "style-loader": "^0.23.1",
     "webpack-dev-server": "^3.2.1"
   },
