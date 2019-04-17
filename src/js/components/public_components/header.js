@@ -83,10 +83,10 @@ class Header extends React.Component{
                                 新闻中心
                             </Menu.Item>
                             <Menu.Item key="science">
-                                企业文化
+                            <Link to="/culture">企业文化</Link>
                             </Menu.Item>
                             <Menu.Item key="culture">
-                                人力资源
+                            <Link to="/hr">人力资源</Link>
                             </Menu.Item>
                             <Menu.Item key="hr">
                             <Link to="/contact_us">联系我们</Link>
