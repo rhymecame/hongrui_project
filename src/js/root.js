@@ -7,6 +7,7 @@ import Industry from './components/industry/industry';
 import ContactUs from './components/contactus/contactus';
 import HumanResource from './components/human_resource/HumanResource';
 import Culture from './components/culture/Culture';
+import ProjectShow from './components/projectshow/ProjectShow';
 
 export default class Root extends React.Component{
     render(){
@@ -18,6 +19,7 @@ export default class Root extends React.Component{
                     <Route path="/culture" component={Culture}></Route>
                     <Route path="/hr" component={HumanResource}></Route>
                     <Route path="/contact_us" component={ContactUs}></Route>
+                    <Route path="/projectshow" component={ProjectShow}></Route>
                 </Router>
             </div>
         );
