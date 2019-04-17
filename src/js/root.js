@@ -8,6 +8,7 @@ import ContactUs from './components/contactus/contactus';
 import HumanResource from './components/human_resource/HumanResource';
 import Culture from './components/culture/Culture';
 import HRLeftList from './components/about_hongrui/hr_leftlist';
+import NewsCenter from './components/news_center/news_center';
 
 export default class Root extends React.Component{
     render(){
@@ -20,6 +21,7 @@ export default class Root extends React.Component{
                     <Route path="/hr" component={HumanResource}></Route>
                     <Route path="/contact_us" component={ContactUs}></Route>
                     <Route path="/about_hongrui" component={HRLeftList}></Route>
+                    <Route path="/news_center" component={NewsCenter}></Route>
                 </Router>
             </div>
         );
