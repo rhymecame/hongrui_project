@@ -73,7 +73,7 @@ class Header extends React.Component{
                             <Link to="/">首页</Link>
                             </Menu.Item>
                             <Menu.Item key="newcenter">
-                                关于宏瑞
+                            <Link to="/about_hongrui">关于宏瑞</Link>
                             </Menu.Item>
                             <Menu.Item key="dangjian">
                                 

@@ -37,7 +37,7 @@ export default class NewsBlock extends React.Component{
         '没有加载到任何新闻';
         return (
             <div class="newsList">
-                <Card>
+                <Card >
                     <ul class="ulstyl">
                     {newsList}
 

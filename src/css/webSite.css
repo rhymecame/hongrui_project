@@ -64,6 +64,7 @@
 .tabs_news{
     padding-left: 10px;
     width:438px;
+    height: 454px;
     float: left;
 }
 
@@ -78,15 +79,21 @@
 .ulstyl{
     margin-top: -15px;
     margin-left: -25px;
+    
 }
 
-.ant-card-body{
-    width: 426px;
-    height: 398px;
+.ant-card-bordered {
+    border: 0px solid #e8e8e8;
 }
 
 .newsTitle{
-    font-size: 20px !important;
+    font-size: 18px !important;
+    margin-bottom: 5px;
+}
+
+.ant-tabs-tab{
+    font-size: 22px;
+    
 }
 
 .menuPosition{
