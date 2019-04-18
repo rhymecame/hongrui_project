@@ -22,6 +22,25 @@ export default class ContentLayout extends React.Component {
 
     }
 
+    setHeaderImage(){
+        let container = {
+            width: '100%',
+            height: '200px', 
+            marginTop: '20px',
+        };
+
+        let img = {
+            width: '100%',
+            height: '100%', 
+        };
+
+        return (
+            <div style={container}>
+                <img style={img} src='./src/images/header.jpg'/>
+            </div>
+        );
+    }
+
     getView(){
         let container={
             width: '100%',
@@ -51,6 +70,7 @@ export default class ContentLayout extends React.Component {
         return(
             <div>
                 <Header/>
+                {this.setHeaderImage()}
             <div style={container}>
 
                 <div style={menu}>
