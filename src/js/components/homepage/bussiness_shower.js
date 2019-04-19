@@ -61,7 +61,7 @@ export default class BussinessShower extends React.Component {
     }
 
     getMenuList() {
-        const titleFontSize = '25px';
+        const titleFontSize = '20px';
         const selectedBackgroundColor = '#2995fc';
         const unselectedBackgroundColor = '#ffffff';
         const selectedFontColor = '#ffffff';
