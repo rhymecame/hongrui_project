@@ -55,15 +55,21 @@ export default class ImgSlider extends Component {
             <span style={projectSpan}>工程1</span>
           </div>
           <div style={block}>
+            <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/2.png'}}}>
             <img src="./src/images/2.png" style={img} />
+            </Link>
             <span style={projectSpan}>工程2</span>
           </div>
           <div style={block}>
+          <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/3.jpg'}}}>
             <img src="./src/images/3.jpg" style={img} />
+            </Link>            
             <span style={projectSpan}>工程3</span>
           </div>
           <div style={block}>
-            <img src="./src/images/4.jpg"  style={img}/>
+          <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/4.jpg'}}}>
+            <img src="./src/images/4.jpg" style={img} />
+            </Link>            
             <span style={projectSpan}>工程4</span>
           </div>
         </Carousel>
