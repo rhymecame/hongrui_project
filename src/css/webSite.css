@@ -70,9 +70,7 @@
 }
 
 .tabs_news{
-    padding-left: 10px;
     height:455px;
-    width: 510px;
     float: left;
 }
 
@@ -92,6 +90,7 @@
 
 .ant-card-bordered {
     border: 1px solid #e8e8e8;
+    padding-top: 10px;
     height: 410px;
 }
 

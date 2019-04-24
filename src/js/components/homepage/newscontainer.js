@@ -31,7 +31,7 @@ export default class NewContainer extends React.Component{
                 </Row>
                 <Row class="rowstyl">
                     <Col span={2}/>
-                    <Col span={20} class="midcontainer">
+                    <Col span={12} class="midcontainer">
                         <div class="leftContainer">
                             <div class="carousel2">
                                 <Carousel  {...settings}>
@@ -42,6 +42,9 @@ export default class NewContainer extends React.Component{
                                 </Carousel>
                             </div>
                         </div>
+                    </Col>
+                    
+                    <Col span={8}>
                         <Tabs class="tabs_news">
                             <TabPane  tab="公司要闻" key="1">
                                 {/* <NewsBlock count={22} type="hongrui" width="100%" bordered="false"></NewsBlock> */}
@@ -55,7 +58,6 @@ export default class NewContainer extends React.Component{
                             </TabPane>
                             
                         </Tabs>
-                        
                     </Col>
                     <Col span={2}/>
                 </Row>
