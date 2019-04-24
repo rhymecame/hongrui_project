@@ -139,11 +139,11 @@ export default class BussinessShower extends React.Component {
                 < div style={{ height: '50px' }} />
 
                 < Row >
-                    <Col span={5} offset={2} style={style}>
+                    <Col span={5} style={style}>
                         {this.getMenuList()}
 
                     </Col>
-                    <Col span={14} style={style}>
+                    <Col span={15} style={style}>
                         <Carousel {...carouselSettings}
                         style={style}
                             >

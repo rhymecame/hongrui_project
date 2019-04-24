@@ -18,7 +18,6 @@ export default class ImgSlider extends Component {
 
     const container={
       marginTop: '30px',
-      marginLeft: '90px',
       width: '85%',
       color: '#333',
     };
