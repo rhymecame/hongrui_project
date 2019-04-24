@@ -60,39 +60,42 @@ class Header extends React.Component{
             <header>
                 <Row>
                     <Col span={1}></Col>
-                    <Col span={3}>
+                    <Col span={4}>
                         <a href="/" class="logo">
                             <img src="./src/images/logo.png" alt="logo" ></img>
                             <span>宏瑞基业</span>
                         </a>
                     </Col>
-                    <Col span={2}></Col>
-                    <Col span={11}>
+                    
+                    <Col span={14}>
                         <Menu class="menuPosition" mode="horizontal" onClick={this.handleClick.bind(this)} >
                             <Menu.Item key="hongrui">
-                            <Link to="/">首页</Link>
+                            <Link class="link_fontsize" to="/">首页</Link>
                             </Menu.Item>
                             <Menu.Item key="newcenter">
-                            <Link to="/about_hongrui">关于宏瑞</Link>
+                            <Link class="link_fontsize" to="/about_hongrui">关于宏瑞</Link>
                             </Menu.Item>
                             <Menu.Item key="dangjian">
                                 
-                                <Link to="/industry">旗下产业</Link>
+                                <Link class="link_fontsize" to="/industry">旗下产业</Link>
                             </Menu.Item>
                             <Menu.Item key="yewu">
-                            <Link to="/news_center">新闻中心</Link>
+                            <Link class="link_fontsize" to="/news_center">新闻中心</Link>
                             </Menu.Item>
                             <Menu.Item key="science">
-                            <Link to="/culture">企业文化</Link>
+                            <Link class="link_fontsize" to="/culture">企业文化</Link>
                             </Menu.Item>
                             <Menu.Item key="culture">
-                            <Link to="/hr">人力资源</Link>
+                            <Link class="link_fontsize" to="/hr">人力资源</Link>
                             </Menu.Item>
                             <Menu.Item key="hr">
-                            <Link to="/contact_us">联系我们</Link>
+                            <Link class="link_fontsize" to="/contact_us">联系我们</Link>
                             </Menu.Item>
                             {/* {userShow} */}
                         </Menu>
+                    </Col>
+                    <Col span={5}></Col>
+                </Row>
                         {/* <Modal title="办公系统" wrapClassName="vertical-center-modal" visible={this.state.modalVisible}
                         onCancel = {()=>this.setModalVisible(false)}
                         onOk={()=>this.setModalVisible(false)} okText="关闭">
@@ -114,9 +117,9 @@ class Header extends React.Component{
                             </TabPane>
                         </Tabs>
                         </Modal> */}
-                    </Col>
-                    <Col span={7}></Col>
-                </Row>
+                    
+                    
+                
             </header>
 
         );
