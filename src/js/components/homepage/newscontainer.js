@@ -61,8 +61,20 @@ export default class NewContainer extends React.Component{
                     </Col>
                     <Col span={2}/>
                 </Row>
-                <BussinessShower></BussinessShower>
-                <ImgScoller/>
+                <Row class="rowstyl">
+                    <Col span={2}/>
+                    <Col span={20} class="midcontainer">
+                        <BussinessShower></BussinessShower>
+                    </Col>
+                    <Col span={2}/>
+                </Row>
+                <Row class="rowstyl">
+                    <Col span={2}/>
+                    <Col span={20} class="midcontainer">
+                        <ImgScoller/>
+                    </Col>
+                    <Col span={2}/>
+                </Row>
             </div>
         );
 

@@ -88,6 +88,8 @@ export default class BussinessShower extends React.Component {
         Object.assign(selectedStyle, commonStyle);
         Object.assign(unSelectedStyle, commonStyle);
 
+        
+
         menu_titles.map
         return (
             <div>
@@ -139,11 +141,11 @@ export default class BussinessShower extends React.Component {
                 < div style={{ height: '50px' }} />
 
                 < Row >
-                    <Col span={5} offset={2} style={style}>
+                    <Col span={6} style={style}>
                         {this.getMenuList()}
 
                     </Col>
-                    <Col span={14} style={style}>
+                    <Col span={18} style={style}>
                         <Carousel {...carouselSettings}
                         style={style}
                             >

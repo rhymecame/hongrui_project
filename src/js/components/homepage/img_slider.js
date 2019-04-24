@@ -1,26 +1,27 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Carousel } from "antd";
 import {Link} from 'react-router';
 import { projectDetail } from "./projectDetail";
+import { Carousel } from "antd";
 
 export default class ImgSlider extends Component {
   render() {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
-      autoplay:true,
       slidesToShow: 3,
-      speed: 500,
       slidesToScroll: 1,
-      accessibility: true,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear"
     };
 
     const container={
       marginTop: '30px',
-      marginLeft: '90px',
-      width: '85%',
+      width: '100%',
       color: '#333',
+      height: '450px'
     };
 
     const projectShowSpan={
@@ -30,52 +31,60 @@ export default class ImgSlider extends Component {
     const projectSpan={
       fontSize:'15px',
       textAlign: 'center',
-      marginLeft: '200px'
+      width: '100%'
     };
+
 
     const block={
+        backgroundSize: '90% 90%',
+        display: 'flex',
+    }
 
-    };
 
     const img={
-      width: '95%',
+      width: '97%',
       height: '300px',
+      margin: 'auto',
       backgroundSize: '100% 100%',
+
     }
+
+    const carousel={
+        backgroundColor: '#F4F4F4',
+    }
+
     console.log("projectDetail[1]");
     console.log(projectDetail);
     return (
       <div className="container" style={container}>
         <span style={projectShowSpan}>经典工程</span>
         <div style={{height:'20px'}}></div>
-        <Carousel {...settings}>
+        <Carousel {...settings} style={carousel}>
           <div style={block}>
             <Link to={{pathname: '/projectshow', query: projectDetail[1]}}>
               <img src={projectDetail[1].imgSrc} style={img}/>
             </Link>
-
-            <span style={projectSpan}>工程1</span>
+            <div style={projectSpan}>工程1</div>
           </div>
           <div style={block}>
           <Link to={{pathname: '/projectshow', query: projectDetail[2]}}>
               <img src={projectDetail[2].imgSrc} style={img}/>
             </Link>
-            <span style={projectSpan}>工程2</span>
+            <div style={projectSpan}>工程2</div>
           </div>
-          <div style={block}>
+          <div >
           <Link to={{pathname: '/projectshow', query: projectDetail[3]}}>
               <img src={projectDetail[3].imgSrc} style={img}/>
             </Link>           
-            <span style={projectSpan}>工程3</span>
+            <div style={projectSpan}>工程3</div>
           </div>
           <div style={block}>
           <Link to={{pathname: '/projectshow', query: projectDetail[4]}}>
               <img src={projectDetail[4].imgSrc} style={img}/>
             </Link>           
-            <span style={projectSpan}>工程4</span>
+            <div style={projectSpan}>工程4</div>
           </div>
         </Carousel>
-        <div style={{height:'20px'}}></div>
       </div>
     );
   }
