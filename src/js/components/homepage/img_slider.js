@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { Carousel } from "antd";
 import {Link} from 'react-router';
+import { projectDetail } from "./projectDetail";
 
 export default class ImgSlider extends Component {
   render() {
@@ -41,35 +42,36 @@ export default class ImgSlider extends Component {
       height: '300px',
       backgroundSize: '100% 100%',
     }
-
+    console.log("projectDetail[1]");
+    console.log(projectDetail);
     return (
       <div className="container" style={container}>
         <span style={projectShowSpan}>经典工程</span>
         <div style={{height:'20px'}}></div>
         <Carousel {...settings}>
           <div style={block}>
-            <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/1.jpg'}}}>
-              <img src="./src/images/1.jpg" style={img}/>
+            <Link to={{pathname: '/projectshow', query: projectDetail[1]}}>
+              <img src={projectDetail[1].imgSrc} style={img}/>
             </Link>
 
             <span style={projectSpan}>工程1</span>
           </div>
           <div style={block}>
-            <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/2.png'}}}>
-            <img src="./src/images/2.png" style={img} />
+          <Link to={{pathname: '/projectshow', query: projectDetail[2]}}>
+              <img src={projectDetail[2].imgSrc} style={img}/>
             </Link>
             <span style={projectSpan}>工程2</span>
           </div>
           <div style={block}>
-          <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/3.jpg'}}}>
-            <img src="./src/images/3.jpg" style={img} />
-            </Link>            
+          <Link to={{pathname: '/projectshow', query: projectDetail[3]}}>
+              <img src={projectDetail[3].imgSrc} style={img}/>
+            </Link>           
             <span style={projectSpan}>工程3</span>
           </div>
           <div style={block}>
-          <Link to={{pathname: '/projectshow', query: {imgSrc: './src/images/4.jpg'}}}>
-            <img src="./src/images/4.jpg" style={img} />
-            </Link>            
+          <Link to={{pathname: '/projectshow', query: projectDetail[4]}}>
+              <img src={projectDetail[4].imgSrc} style={img}/>
+            </Link>           
             <span style={projectSpan}>工程4</span>
           </div>
         </Carousel>
