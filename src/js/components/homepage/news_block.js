@@ -18,7 +18,7 @@ export default class NewsBlock extends React.Component{
     //     fetch("http://",myFetchOptions).then(response=>response.json()).then(json=>this.setState({news:json}));
     // };
     componentWillMount(){
-        this.setState({news:[{title:"习近平主席在今天发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"}]});
+        this.setState({news:[{title:"习近平主席在今天发表重要讲话，改变了中国。邓小平是中国的总设计师。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"},{title:"习近平主席发表重要讲话，改变了中国。",uniqueky:"hehe"}]});
     }
 
     render(){
@@ -37,10 +37,9 @@ export default class NewsBlock extends React.Component{
         '没有加载到任何新闻';
         return (
             <div class="newsList">
-                <Card >
+                <Card class="news_card">
                     <ul class="ulstyl">
                     {newsList}
-
                     </ul>
                 </Card>
             </div>

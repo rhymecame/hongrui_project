@@ -72,6 +72,7 @@
 .tabs_news{
     height:455px;
     float: left;
+    width: 100%;
     border: 1px solid #e8e8e8;
     margin-top: 10px;
 }
@@ -86,9 +87,15 @@
 
 .ulstyl{
     margin-top: -15px;
-    margin-left: -25px;
+    margin-left: -45px;
+    width: 100%;
     
 }
+
+.news_card{
+    width: 100%;
+}
+
 
 .ant-card-bordered {
     border: 0px solid #e8e8e8;
@@ -107,12 +114,19 @@
 .newsTitle{
     font-size: 20px !important;
     margin-bottom: 5px;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .ant-tabs-tab{
     font-size: 22px;
     
-    
+}
+
+.news_block{
+    width: 100%;
 }
 
 /* .menuPosition{

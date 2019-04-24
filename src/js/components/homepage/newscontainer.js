@@ -43,17 +43,17 @@ export default class NewContainer extends React.Component{
                             </div>
                         </div>
                     </Col>
-                    
+
                     <Col span={8}>
                         <Tabs class="tabs_news">
                             <TabPane  tab="公司要闻" key="1">
                                 {/* <NewsBlock count={22} type="hongrui" width="100%" bordered="false"></NewsBlock> */}
-                                <NewsBlock width="100%" bordered="true"></NewsBlock>
+                                <NewsBlock class="news_block"></NewsBlock>
 
                             </TabPane>
                             <TabPane tab="行业资讯" key="2">
                                 {/* <NewsBlock count={22} type="hongrui" width="100%" bordered="false"></NewsBlock> */}
-                                <NewsBlock width="100%" bordered="false"></NewsBlock>
+                                <NewsBlock class="news_block"></NewsBlock>
 
                             </TabPane>
                             
