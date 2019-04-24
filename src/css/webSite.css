@@ -72,6 +72,8 @@
 .tabs_news{
     height:455px;
     float: left;
+    border: 1px solid #e8e8e8;
+    margin-top: 10px;
 }
 
 /* .ant-card{
@@ -89,15 +91,17 @@
 }
 
 .ant-card-bordered {
-    border: 1px solid #e8e8e8;
-    padding-top: 10px;
-    height: 410px;
+    border: 0px solid #e8e8e8;
+    /* padding-top: 10px;
+    height: 100%; */
 }
 
 
 
 .ant-tabs-nav-scroll {
     border-bottom: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .newsTitle{
