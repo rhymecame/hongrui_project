@@ -7,16 +7,28 @@ import MenuItem from 'antd/lib/menu/MenuItem';
 import SubMenu from 'antd/lib/menu/SubMenu';
 import Hold from './Hold';
 import Introduction from './Introduction';
-import {Router,Route,hashHistory} from 'react-router';
+import {Router,Route,hashHistory, Redirect} from 'react-router';
 import {Link} from 'react-router';
 
-
+const URL = [
+    '/culture',
+    "/culture/introduction",
+    "/culture/hold",
+]
 export default class Culture extends ContentLayout {
     constructor(props){
         super(props);
         this.state={
             defaultSelectedKeys: ['1'],
         }
+
+        let url = this.props.location.pathname;
+        if(url == URL[0] || url == URL[1]){
+            this.state.defaultSelectedKeys = ['1'];
+        }else if(url == URL[2]){
+            this.state.defaultSelectedKeys = ['2'];
+        }
+        console.log(this.props);
     }
 
     setMenu(){
@@ -25,7 +37,7 @@ export default class Culture extends ContentLayout {
                 <Menu
                     defaultOpenKeys={['1']}
                     mode='inline'
-                    defaultSelectedKeys={['1']}>
+                    defaultSelectedKeys={this.state.defaultSelectedKeys}>
                     <SubMenu 
                         key='1'
                         title="企业文化" >
@@ -58,7 +70,8 @@ export default class Culture extends ContentLayout {
             <div>
                 <div  style={content}>
                 <Router history={hashHistory}>
-                        <Route path="/culture" component={Introduction}></Route>
+                        {/* <Route path="/culture" component={Introduction}></Route> */}
+                        <Redirect from="/culture" to="/culture/introduction" />
                         <Route path="/culture/introduction" component={Introduction}></Route>
                         <Route path="/culture/hold" component={Hold}></Route>
                 </Router>

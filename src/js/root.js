@@ -18,12 +18,13 @@ export default class Root extends React.Component{
                 <Router history={hashHistory}>
                     <Route exact path="/" component={Index}></Route>
                     <Route path="/industry" component={Industry}></Route>
-                    <Route path="/culture" component={Culture}></Route>
+                    <Route path="/culture(/**)" component={Culture}></Route>
                     <Route path="/hr" component={HumanResource}></Route>
                     <Route path="/contact_us" component={ContactUs}></Route>
                     <Route path="/projectshow" component={ProjectShow}></Route>
                     <Route path="/about_hongrui" component={HRLeftList}></Route>
-                    <Route path="/news_center" component={NewsCenter}></Route>
+                    {/* 下面的**用于匹配路径，具体使用可以查，使得该页面下也可以跳转到新闻详情下去 */}
+                    <Route path="/news_center(/**)" component={NewsCenter}></Route>
                 </Router>
             </div>
         );
