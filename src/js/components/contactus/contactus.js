@@ -35,8 +35,9 @@ export default class ContactUs extends  ContentLayout{
         
         let map = {
             width : '80%',
-            height: '60%',
-            backgroundSize: '100% 100%',
+            height: 400,
+            // backgroundSize: '100% 100%',
+            marginBottom:30,
             
         }
 
@@ -45,9 +46,6 @@ export default class ContactUs extends  ContentLayout{
             <div>
                 <div style={content}>
                     <img style={map} src="./src/images/location.jpg"/>
-                </div>
-
-                <div  style={content}>
                     <h2>北京宏瑞基业建筑工程有限公司</h2>
                     <p/>
                     地址：北京市大兴区兴华大街5号院 （绿地启航国际12号楼307）
@@ -56,6 +54,7 @@ export default class ContactUs extends  ContentLayout{
                     <p/>
                     邮箱号：Beijinghrjy@163.com
                 </div>
+                
             </div>
         );
     

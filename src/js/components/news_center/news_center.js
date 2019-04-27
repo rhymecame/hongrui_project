@@ -25,7 +25,7 @@ export default class NewsCenter extends React.Component {
 
         return (
             <div style={container}>
-                <img style={img} src='./src/images/header.jpg'/>
+                <img style={img} src='./src/images/common.jpeg'/>
             </div>
         );
     }

@@ -9,5 +9,20 @@
     height: 240px;
 }
 
+.left_menu{
+    color: #424242;
+}
 
+.overview_dis{
+    display: flex;
+}
+
+.ant-card-body {
+    height: 240px;
+}
+
+/* .right_list{
+    max-height: 600px;
+    
+} */
 

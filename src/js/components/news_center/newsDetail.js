@@ -21,26 +21,7 @@ export default class NewsDetail extends React.Component {
         this.state.id =  this.props.location.query.id;
         this.initData();
     }
-
-    setHeaderImage(){
-        let container = {
-            width: '100%',
-            height: '200px', 
-            marginTop: '20px',
-        };
-
-        let img = {
-            width: '100%',
-            height: '100%', 
-        };
-
-        return (
-            <div style={container}>
-                <img style={img} src='./src/images/header.jpg'/>
-            </div>
-        );
-    }
-
+    
     initData(){
         let data = newsData;
         console.log(data);
@@ -78,7 +59,6 @@ export default class NewsDetail extends React.Component {
 
         return(
             <div>
-                {this.setHeaderImage()}
                 {/* 这里的row是用来把两边空出来的 */}
                 <Row class="rowstyl">
                     <Col span={3}/>

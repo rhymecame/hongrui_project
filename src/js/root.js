@@ -10,6 +10,7 @@ import Culture from './components/culture/Culture';
 import ProjectShow from './components/projectshow/ProjectShow';
 import HRLeftList from './components/about_hongrui/hr_leftlist';
 import NewsCenter from './components/news_center/news_center';
+import ResidentialDetail from './components/industry/residential_detail';
 
 export default class Root extends React.Component{
     render(){
@@ -25,6 +26,7 @@ export default class Root extends React.Component{
                     <Route path="/about_hongrui" component={HRLeftList}></Route>
                     {/* 下面的**用于匹配路径，具体使用可以查，使得该页面下也可以跳转到新闻详情下去 */}
                     <Route path="/news_center(/**)" component={NewsCenter}></Route>
+                    <Route path="/residential_details" component={ResidentialDetail}></Route>
                 </Router>
             </div>
         );
