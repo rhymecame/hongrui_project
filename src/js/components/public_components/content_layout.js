@@ -36,7 +36,7 @@ export default class ContentLayout extends React.Component {
 
         return (
             <div style={container}>
-                <img style={img} src='./src/images/header.jpg'/>
+                <img style={img} src='./src/images/common.jpeg'/>
             </div>
         );
     }
@@ -44,7 +44,7 @@ export default class ContentLayout extends React.Component {
     getView(){
         let container={
             width: '100%',
-            height: '800px', 
+            minHeight: '600px', 
             display: 'flex',
             paddingLeft: '40px',
             paddingRight: '40px',
@@ -61,7 +61,7 @@ export default class ContentLayout extends React.Component {
         };
         
         let menu = {
-            marginLeft: '100px',
+            // marginLeft: '100px',
             width: '20%',
             height: '100%',
             background: '#F4F4F4',

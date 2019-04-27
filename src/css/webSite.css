@@ -118,6 +118,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    border-bottom: 1px #e6e6e6 dashed;
+    line-height: 43px;
 }
 
 .ant-tabs-tab{
@@ -138,6 +140,11 @@
     font-size: 20px;
 }
 
+/*新闻列表里的link链接，改变字体颜色*/
+.link_color{
+    color: #424242;
+    font-family: "微软雅黑";
+}
 /* .ant-menu-horizontal {
     border-bottom: 0px;
    

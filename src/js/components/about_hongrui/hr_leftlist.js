@@ -9,11 +9,31 @@ import HRSpeech from './hr_speech';
 import HROrganization from './hr_organization';
 import HRQualification from './hr_qualification';
 import styles from '../../../css/about_hongrui.css';
+import Residential from '../industry/residential';
 
 const SubMenu = Menu.SubMenu;
 
 
 export default class HRLeftList extends React.Component {
+
+    setHeaderImage(){
+        let container = {
+            width: '100%',
+            height: '200px', 
+            marginTop: '20px',
+        };
+
+        let img = {
+            width: '100%',
+            height: '100%', 
+        };
+
+        return (
+            <div style={container}>
+                <img style={img} src='./src/images/common.jpeg'/>
+            </div>
+        );
+    }
 
     // constructor(){
     //     super();
@@ -26,18 +46,19 @@ export default class HRLeftList extends React.Component {
         return(
             <div>
                 <Header></Header>
-                <Row class="list_row" style={{marginBottom:50,marginTop:50}}>
+                {this.setHeaderImage()}
+                <Row class="list_row" style={{marginBottom:50,marginTop:30}}>
                     <Col span={4}></Col>
                     <Col span={3}>
                         <Menu mode="vertical" defaultSelectedKeys={["1"]}>
                             <Menu.Item key="1">
-                            <Link to="/about_hongrui">集团简介</Link>
+                            <Link to="/about_hongrui">公司简介</Link>
                             </Menu.Item>
                             <Menu.Item key="2">
                             <Link to="/about_hongrui/hr_speech">董事长致辞</Link>
                             </Menu.Item>
                             <Menu.Item key="3">
-                            <Link to="/about_hongrui/hr_qualification">集团资质</Link>
+                            <Link to="/about_hongrui/hr_qualification">公司资质</Link>
                             </Menu.Item>
                             <Menu.Item key="4">
                             <Link to="/about_hongrui/hr_organization">组织结构</Link>
@@ -63,6 +84,7 @@ export default class HRLeftList extends React.Component {
                             <Route path="/about_hongrui" component={HRIntroduction}></Route>
                             <Route path="/about_hongrui/hr_introduction" component={HRIntroduction}></Route>
                             <Route path="/about_hongrui/hr_speech" component={HRSpeech}></Route>
+                            {/* <Route path="/about_hongrui/hr_speech" component={Residential}></Route> */}
                             <Route path="/about_hongrui/hr_organization" component={HROrganization}></Route>
                             <Route path="/about_hongrui/hr_qualification" component={HRQualification}></Route>
                         </Router>   

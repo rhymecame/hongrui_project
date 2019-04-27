@@ -30,7 +30,10 @@ export default class NewsBlock extends React.Component{
                 {/* <Link to={`details/${newsItem.uniqueky}`} target="_blank">
                     {newsItem.title}
                 </Link> */}
+                <Link class="link_color" to="/news_center" target="_blank">
                 {newsItem.title}
+                </Link>
+                
             </li>
         ))
         :

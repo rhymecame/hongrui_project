@@ -10,6 +10,7 @@ import Culture from './components/culture/Culture';
 import ProjectShow from './components/projectshow/ProjectShow';
 import HRLeftList from './components/about_hongrui/hr_leftlist';
 import NewsCenter from './components/news_center/news_center';
+import ResidentialDetail from './components/industry/residential_detail';
 
 export default class Root extends React.Component{
     render(){
@@ -17,13 +18,14 @@ export default class Root extends React.Component{
             <div>
                 <Router history={hashHistory}>
                     <Route exact path="/" component={Index}></Route>
-                    <Route path="/industry" component={Industry}></Route>
+                    <Route exact path="/industry" component={Industry}></Route>
                     <Route path="/culture" component={Culture}></Route>
                     <Route path="/hr" component={HumanResource}></Route>
                     <Route path="/contact_us" component={ContactUs}></Route>
                     <Route path="/projectshow" component={ProjectShow}></Route>
                     <Route path="/about_hongrui" component={HRLeftList}></Route>
                     <Route path="/news_center" component={NewsCenter}></Route>
+                    <Route path="/residential_details" component={ResidentialDetail}></Route>
                 </Router>
             </div>
         );
