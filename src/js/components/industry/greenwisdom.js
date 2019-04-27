@@ -19,7 +19,7 @@ export default class GreenWisdom extends ContentLayout{
                     mode='inline'
                     defaultSelectedKeys={['1']}>
                     
-                        <MenuItem class="left_menu" style={{fontSize:22}} key="1">
+                        <MenuItem class="left_menu" style={{fontSize:20}} key="1">
                             绿色智造   
                         </MenuItem>
                 </Menu>

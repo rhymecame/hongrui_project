@@ -3,9 +3,10 @@ import { List, Card, Row } from 'antd';
 import Item from 'antd/lib/list/Item';
 import styles from '../../../css/industry.css';
 import { Pagination } from 'antd';
+import {DisplayData1} from './display_data';
+import {Link} from 'react-router';
 
-const data = [{title:'兴化海德国际'},
-];
+const data = DisplayData1;
 
 // const real_content = {
 //     height:"400px",
@@ -36,7 +37,9 @@ export default class CityComplex extends React.Component{
                     renderItem={item =>(
                         <List.Item>
                             <Card headStyle={{textAlign:"center"}} title={item.title}>
-                                <img style={img} src='./src/images/infra.jpeg'></img>
+                                <Link to={{pathname:"/residential_details",query:{id:item.id,type:item.type}}} target="_blank">
+                                    <img style={img} src='./src/images/infra.jpeg'></img>
+                                </Link>
                             </Card>
                         </List.Item>
                     )}

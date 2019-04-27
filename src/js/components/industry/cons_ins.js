@@ -100,17 +100,17 @@ export default class ConsIns extends ContentLayout{
                 <Router history={hashHistory}>
                         <Route path="/industry/cons_ins" component={ConsInsOverview}></Route>
                         <Route path="/industry/cons_ins/view1" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view2" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view3" component={Residential}></Route>
+                        <Route path="/industry/cons_ins/view2" component={CityComplex}></Route>
+                        <Route path="/industry/cons_ins/view3" component={SafeHouse}></Route>
                         <Route path="/industry/cons_ins/view4" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view5" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view6" component={Residential}></Route>
+                        <Route path="/industry/cons_ins/view5" component={CityComplex}></Route>
+                        <Route path="/industry/cons_ins/view6" component={SafeHouse}></Route>
                         <Route path="/industry/cons_ins/view7" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view8" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view9" component={Residential}></Route>
+                        <Route path="/industry/cons_ins/view8" component={CityComplex}></Route>
+                        <Route path="/industry/cons_ins/view9" component={SafeHouse}></Route>
                         <Route path="/industry/cons_ins/view10" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view11" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view12" component={Residential}></Route>
+                        <Route path="/industry/cons_ins/view11" component={CityComplex}></Route>
+                        <Route path="/industry/cons_ins/view12" component={SafeHouse}></Route>
                         
                 </Router>
                 </div>

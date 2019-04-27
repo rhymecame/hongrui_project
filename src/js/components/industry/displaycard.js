@@ -46,14 +46,14 @@ export default class DisplayCard extends React.Component {
                     <Col span={8}>
                         <Card headStyle={{textAlign:"center"}} title="绿色智造" bordered={true}>
                         <Link to="/industry/greenwisdom">
-                        <img class="cardimage" alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
+                        <img class="cardimage" alt="example" src="./src/images/green_wis.jpeg" />
                         </Link>
                         </Card>
                     </Col>
                     <Col span={8}>
                         <Card headStyle={{textAlign:"center"}} title="建筑安装" bordered={true}>
                         <Link to="/industry/cons_ins">
-                        <img class="cardimage" alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
+                        <img class="cardimage" alt="example" src="./src/images/cons_begin.jpeg" />
                         </Link>
                         </Card>
                     </Col>
@@ -65,14 +65,14 @@ export default class DisplayCard extends React.Component {
                     <Col span={8}>
                         <Card headStyle={{textAlign:"center"}} title="地产开发" bordered={true}>
                         <Link to="/industry/estate_dev">
-                        <img class="cardimage" alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
+                        <img class="cardimage" alt="example" src="./src/images/estate_dev.jpeg" />
                         </Link>
                         </Card>
                     </Col>
                     <Col span={8}>
                         <Card headStyle={{textAlign:"center"}} title="基础设施" bordered={true}>
                         <Link to="/industry/infrastructure">
-                        <img class="cardimage" alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
+                        <img class="cardimage" alt="example" src="./src/images/infra_begin.jpeg" />
                         </Link>
                         </Card>
                     </Col>

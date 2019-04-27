@@ -61,10 +61,10 @@ class Header extends React.Component{
                 <Row>
                     <Col span={1}></Col>
                     <Col span={4}>
-                        <a href="/" class="logo">
+                        <Link to="/" class="logo">
                             <img src="./src/images/logo.png" alt="logo" ></img>
                             <span>宏瑞基业</span>
-                        </a>
+                        </Link>
                     </Col>
                     
                     <Col span={14}>

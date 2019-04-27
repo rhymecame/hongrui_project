@@ -3,9 +3,11 @@ import { List, Card, Row } from 'antd';
 import Item from 'antd/lib/list/Item';
 import styles from '../../../css/industry.css';
 import { Pagination } from 'antd';
+import { DisplayData2 } from './display_data';
+import {Link} from 'react-router';
 
-const data = [{title:'徐州翡翠城'},
-];
+
+const data = DisplayData2;
 
 // const real_content = {
 //     height:"400px",
@@ -36,7 +38,9 @@ export default class SafeHouse extends React.Component{
                     renderItem={item =>(
                         <List.Item>
                             <Card headStyle={{textAlign:"center"}} title={item.title}>
+                            <Link to={{pathname:"/residential_details",query:{id:item.id,type:item.type}}} target="_blank">
                                 <img style={img} src='./src/images/safe_house.jpeg'></img>
+                            </Link>
                             </Card>
                         </List.Item>
                     )}
