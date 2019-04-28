@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {Row,Col, Modal} from 'antd';
 import {Menu,Icon,Tabs,message,Form,Input,Button,Checkbox} from 'antd';
 import styles from '../../../css/webSite.css';
@@ -8,39 +9,65 @@ const SubMenu = Menu.SubMenu;
 const TabPane = Tabs.TabPane;
 const MenuItemGroup = Menu.ItemGroup;
 
-class Header extends React.Component{
-    // constructor(){
-    //     super();
-    //     this.state ={
-    //         current:'hongrui',
-    //         // modalVisible:false,
-    //         // action:'login',
-    //         // hasLogined:false,
-    //         // userNickName:'',
-    //         // userid:0
-    //     };
-    // };
-    // setModalVisible(value){
-    //     this.setState({modalVisible:value});
-    // };
-    handleClick(e){
-        // if(e.key === "register"){
-        //     this.setState({current:'register'});
-        //     this.setModalVisible(true);
-        // }
-        // else{
-        //     {
-        //         this.setState({current:e.key});
-        //     }
-        // }
-        this.setState({current:e.key});
+const pathPrefixs = [
+    '',
+    '',
+    'about_hongrui',
+    'industry',
+    'news_center',
+    'culture',
+    'hr',
+    'contact_us',
+];
+
+
+
+export default class Header extends React.Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            current:'hongrui',
+            curKey: '0',  //默认放个0，代表哪个项都没选中
+        };
+        this.getCurKey(this.props);
     };
+
+    componentWillReceiveProps(nextProps){
+        this.getCurKey(nextProps);
+    }
+
+    getCurKey(props){
+        //获得路径中第一个/与第二个/之间的内容，即一级目录
+        let prefix = props.location.split('/')[1];
+
+        let curKey = '0';
+        pathPrefixs.forEach((ele, index) => {
+            if(prefix == ele){
+                curKey = ''+index;
+            }
+        });
+        console.log('curKey='+curKey + ' stateKey='+this.state.curKey);
+        //只有保存的和当前的不一样时才更新state
+        if(curKey != this.state.curKey){
+            console.log('setState');
+            this.setState(
+                {
+                    curKey: curKey
+                }
+            );
+        }
+    }
+
+    setModalVisible(value){
+        this.setState({modalVisible:value});
+    };
+
     handleSubmit(e){
         //page starts submit
         
     };
     render(){
-        let {getFieldProps} = this.props.form;
+        // let {getFieldProps} = this.props.form;
         // const userShow = this.state.hasLogined
         // ?<Menu.Item key="logout" class="register">
         //     <Button type="primary" htmlType="button">{this.state.userNickName}</Button>
@@ -68,27 +95,34 @@ class Header extends React.Component{
                     </Col>
                     
                     <Col span={14}>
-                        <Menu class="menuPosition" mode="horizontal" onClick={this.handleClick.bind(this)} >
-                            <Menu.Item key="hongrui">
+                        <Menu 
+                        id="menuPosition"
+                        class="menuPosition" 
+                        mode="horizontal" 
+                        selectedKeys = {[this.state.curKey]}
+                        // onClick={this.handleClick.bind(this)} 
+                        >
+                        {/* Menu.Item的key属性是关联Menu的selectedKeys的，一定要保持一致 */}
+                            <Menu.Item key="1">
                             <Link class="link_fontsize" to="/">首页</Link>
                             </Menu.Item>
-                            <Menu.Item key="newcenter">
+                            <Menu.Item key="2">
                             <Link class="link_fontsize" to="/about_hongrui">关于宏瑞</Link>
                             </Menu.Item>
-                            <Menu.Item key="dangjian">
+                            <Menu.Item key="3">
                                 
                                 <Link class="link_fontsize" to="/industry">旗下产业</Link>
                             </Menu.Item>
-                            <Menu.Item key="yewu">
+                            <Menu.Item key="4">
                             <Link class="link_fontsize" to="/news_center">新闻中心</Link>
                             </Menu.Item>
-                            <Menu.Item key="science">
+                            <Menu.Item key="5">
                             <Link class="link_fontsize" to="/culture">企业文化</Link>
                             </Menu.Item>
-                            <Menu.Item key="culture">
+                            <Menu.Item key="6">
                             <Link class="link_fontsize" to="/hr">人力资源</Link>
                             </Menu.Item>
-                            <Menu.Item key="hr">
+                            <Menu.Item key="7">
                             <Link class="link_fontsize" to="/contact_us">联系我们</Link>
                             </Menu.Item>
                             {/* {userShow} */}
@@ -125,4 +159,4 @@ class Header extends React.Component{
         );
     };
 }
-export default Header = Form.create({})(Header);
+// export default Header = Form.create({})(Header);

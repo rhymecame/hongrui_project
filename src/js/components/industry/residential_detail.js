@@ -97,7 +97,6 @@ export default class ResidentialDetail extends React.Component {
 
         return (
             <div>
-            <Header></Header>
             {this.setHeaderImage()}
             <div style={{marginTop:'15px'}}>
                 {/* 这里的row是用来把两边空出来的 */}
@@ -119,7 +118,6 @@ export default class ResidentialDetail extends React.Component {
                     <Col span={3}/>
                 </Row>
             </div>
-            <Footer></Footer>
             </div>
         );
     }

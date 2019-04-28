@@ -33,7 +33,6 @@ export default class NewsCenter extends React.Component {
     render(){
         return(
             <div>
-                <Header></Header>
                 {this.setHeaderImage()}
                 <Router history={hashHistory}>
                     <Route path="/news_center" component={NewsList}></Route>
@@ -42,7 +41,6 @@ export default class NewsCenter extends React.Component {
                     } */}
                     <Route path="/news_center/news_detail" component={NewsDetail}></Route>
                 </Router>
-                <Footer></Footer>
             </div>
 
         );

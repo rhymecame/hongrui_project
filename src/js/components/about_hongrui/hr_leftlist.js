@@ -45,7 +45,6 @@ export default class HRLeftList extends React.Component {
     render(){
         return(
             <div>
-                <Header></Header>
                 {this.setHeaderImage()}
                 <Row class="list_row" style={{marginBottom:50,marginTop:30}}>
                     <Col span={4}></Col>
@@ -92,7 +91,6 @@ export default class HRLeftList extends React.Component {
                     </Col>
                     <Col span={4}></Col>
                 </Row>
-                <Footer></Footer>
             </div>
 
         );

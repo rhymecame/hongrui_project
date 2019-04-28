@@ -9,9 +9,7 @@ export default class Index extends React.Component {
     render() {
         return (
             <div>
-                <Header></Header>
                 <NewsContainer></NewsContainer>
-                <Footer></Footer>
             </div>
         );
     };

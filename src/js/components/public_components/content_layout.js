@@ -70,7 +70,6 @@ export default class ContentLayout extends React.Component {
 
         return(
             <div>
-                <Header/>
                 {this.setHeaderImage()}
             <div style={container}>
 
@@ -82,7 +81,6 @@ export default class ContentLayout extends React.Component {
                 {this.setContent()}
                 </div>
             </div>
-            <Footer/>
             </div>
         );
 

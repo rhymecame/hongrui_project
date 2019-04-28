@@ -33,7 +33,7 @@ export default class NewsList extends React.Component {
         return (
             <List.Item>
                 <Link to={{pathname: url, query: {id: item.id}}} >
-                <Typography.Text mark>[ITEM]</Typography.Text> {item.title}
+                {item.title}
                 </Link>
             </List.Item>
         );

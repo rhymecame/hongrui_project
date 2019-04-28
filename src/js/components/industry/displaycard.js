@@ -35,8 +35,6 @@ export default class DisplayCard extends React.Component {
     render(){
         return(
         <div>
-            <Header></Header>
-
             {this.setHeaderImage()}
             <div style={{ background: '#FFFFFF', padding: '30px' }}>
             
@@ -79,7 +77,6 @@ export default class DisplayCard extends React.Component {
                     <Col span={4}></Col>
                 </Row>  
                 </div>
-            <Footer></Footer>
         </div>
             
             
