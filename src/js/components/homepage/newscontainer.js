@@ -5,6 +5,7 @@ import styles from '../../../css/webSite.css';
 import NewsBlock from './news_block';
 import BussinessShower from './bussiness_shower';
 import ImgScoller from './img_slider';
+import NewsBlock2 from './news_block2';
 const TabPane = Tabs.TabPane;
 export default class NewContainer extends React.Component{
     render(){
@@ -15,16 +16,21 @@ export default class NewContainer extends React.Component{
             slidesToShow:1,
             autoplay:true
         };
+
+        const img = { 
+            width:"100%",
+            height:"100%",
+        }
         return(
             <div>
                 <Row>
                     <Col span={24} class="topcontainer">  
                         <div>
                             <Carousel  {...settings}>
-                                <div><img class="topimghandle" src="./src/images/1.jpg"/></div>
-                                <div><img class="topimghandle" src="./src/images/2.png"/></div>
-                                <div><img class="topimghandle" src="./src/images/3.jpg"/></div>
-                                <div><img class="topimghandle" src="./src/images/4.jpg"/></div>
+                                <div><img style={img}  src="./src/images/1.jpg"/></div>
+                                <div><img style={img}  src="./src/images/2.png"/></div>
+                                <div><img style={img}  src="./src/images/3.jpg"/></div>
+                                <div><img style={img}  src="./src/images/4.jpg"/></div>
                             </Carousel>
                         </div>    
                     </Col>
@@ -53,7 +59,7 @@ export default class NewContainer extends React.Component{
                             </TabPane>
                             <TabPane tab="行业资讯" key="2">
                                 {/* <NewsBlock count={22} type="hongrui" width="100%" bordered="false"></NewsBlock> */}
-                                <NewsBlock class="news_block"></NewsBlock>
+                                <NewsBlock2 class="news_block"></NewsBlock2>
 
                             </TabPane>
                             

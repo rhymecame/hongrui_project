@@ -20,7 +20,7 @@ export const newsData = [
 
     {
         id: 1,
-        title: '习近平主席在今天发表重要讲话，改变了中国。邓小平是中国的总设计师。',
+        title: '习近平主席在今天发表重要讲话，改变了中国。邓小平是中国的总设计师',
         content: news1
     },
     {
@@ -31,107 +31,158 @@ export const newsData = [
     },
     {
         id: 3,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
+        title: '中国盛会期间，英德两国大曝料传递重磅信号',
         content: news3
     },
     {
         id: 4,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
+        title: '美媒：被中国拒收的美国垃圾，如今马来西亚也嫌弃了',
         content: news4
     },
     {
         id: 5,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
+        title: '如何畅游北京世园会？这里为您准备了三条趣玩线路',
         content: news5
     },
     {
         id: 6,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
-        content: news4
+        title: '朝阳海淀丰台石景山四区预计7月1日启动路侧停车电子收费',
+        content: news1
     },
     {
         id: 7,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
-        content: news4
+        title: '昌平国际马术嘉年华今日开幕 将推动成立马术协会',
+        content: news2
     },
     {
         id: 8,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
-        content: news4
+        title: '给智慧城市打基础，北京5G基站年底前破万',
+        content: news3
     },
     {
         id: 9,
-        title: '习近平主席在今天发表重要讲话，改变了中国。',
+        title: '升温！北京今最高气温19℃，好天气助力五一小长假',
         content: news4
     },
     {
         id: 10,
         title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        content: news5
     },
     {
         id: 11,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
+        title: '北京今天全天交通压力大，下午至晚间多处交通管制',
         content: news4
     },
     {
         id: 12,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '北京将促进限建区宅基地按集约用地要求改造',
+        content: news3
     },
     {
         id: 13,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '定了！北京“住宅工程质量潜在缺陷保险”正式施行',
+        content: news2
     },
     {
         id: 14,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '北京世园会新闻中心5G信号全覆盖',
+        content: news1
     },
     {
         id: 15,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '“一带一路”：如何绘制精谨细腻的“工笔画” 一带一路',
+        content: news5
     },
     {
         id: 16,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '高峰论坛：刷新中国经济“信心指数”',
+        content: news1
     },
     {
         id: 17,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '央视快评：以创新理念，绘制精谨细腻“工笔画”',
+        content: news2
     },
     {
         id: 18,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '国际锐评：五大举措推动中国更开放 人民日报 新华时评',
+        content: news3
     },
     {
         id: 19,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
+        title: '习主席和39位外方领导人围桌共绘“工笔画”',
         content: news4
     },
     {
         id: 20,
-        title: '习近平出席第二届“一带一路”国际合作高峰论坛开幕式并发表主旨演讲',
-        content: news4
+        title: '负债5.28万亿，高铁是冲撞中国经济发展的“灰犀牛”吗？',
+        content: news5
     },
     {
         id: 21,
-        title: 'Racing car sprays burning fuel into crowd.',
+        title: '揭秘亚马逊AWS崛起之旅：从免费服务到市场领导者',
         content: news4
     },
     {
         id: 22,
-        title: 'Racing car sprays burning fuel into crowd.',
-        content: news4
+        title: '6月见，华为MateX国行版进入最后阶段：转轴20万次不变形',
+        content: news3
     },
     {
         id: 23,
         title: 'Racing car sprays burning fuel into crowd.',
-        content: news4
+        content: news1
     },
   ];
+
+  export const newsData1 = [
+
+    {
+        id: 1,
+        title: '俄军方官宣！这位就是俄近卫军最美女战士',
+        content: news1,
+        type:1
+    },
+    {
+        id: 2,
+        title: '055大驱霸气甲板照曝光：垂发如巧克力 101舰今非昔比',
+        content: news2,
+        type:1
+    },
+    {
+        id: 3,
+        title: '俄总统发言人表示欢迎特朗普消减核武建议，但希望先了解细节',
+        content: news3,
+        type:1
+    },
+    {
+        id: 4,
+        title: '首艘国产航母下水两周年！他曾说：如果中国不建航母，我死不瞑目',
+        content: news4,
+        type:1
+    },
+    {
+        id: 5,
+        title: '高清大图！中国-东南亚国家“海上联演-2019”圆满结束',
+        content: news5,
+        type:1
+    },
+    {
+        id: 6,
+        title: '没想到，美国FBI局长也有说出这句话的一天',
+        content: news1,
+        type:1
+    },
+    {
+        id: 7,
+        title: '斯里兰卡军方与恐怖分子26日晚发生枪战 造成3死3伤',
+        content: news2,
+        type:1
+    },
+    {
+        id: 8,
+        title: '日企拆解华为芯片后得出结论：5G不再是高通一家独大',
+        content: news3,
+        type:1
+    },];
