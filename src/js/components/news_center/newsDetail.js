@@ -6,7 +6,7 @@ import { List, Typography } from 'antd';
 import {Row} from 'antd';
 import styles from '../../../css/news_center.css';
 import NewsList from './newsList';
-import {newsData} from './newsData'
+import {newsData, newsData1} from './newsData'
 
 
 export default class NewsDetail extends React.Component {
@@ -16,15 +16,21 @@ export default class NewsDetail extends React.Component {
         this.state={
             id: 0,
             title: 'default',
-            content: 'default content'
+            content: 'default content',
+            type:0,
         }
         this.state.id =  this.props.location.query.id;
+        this.state.type = this.props.location.query.type;
         this.initData();
     }
     
     initData(){
-        let data = newsData;
+        let data;
         console.log(data);
+        if(this.state.type == 1)
+            data = newsData1;
+        else
+            data = newsData;
         data.forEach(ele => {
             if(ele.id == this.state.id){
                 this.state.title = ele.title;
