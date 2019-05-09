@@ -53,7 +53,7 @@ export default class NewContainer extends React.Component {
                     </Col>
 
                     <Col span={8}>
-                        <div style={{paddingTop: '10px'}}>
+                        <div style={{paddingTop: '2.1%'}}>
                             <Tabs class="tabs_news" >
                                 <TabPane tab='公司要闻' key="1" >
                                     {/* <NewsBlock count={22} type="hongrui" width="100%" bordered="false"></NewsBlock> */}
