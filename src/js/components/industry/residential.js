@@ -27,7 +27,6 @@ export default class Residential extends React.Component{
 
 
     
-   
     render(){
         return (
             <div>
