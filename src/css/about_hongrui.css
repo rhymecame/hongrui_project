@@ -1,4 +1,12 @@
 .list_row{
     width:100%;
-    height:500px;
+    min-height:500px;
 }
+
+.img {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg); /*兼容-webkit-引擎浏览器*/
+    -moz-transform:rotate(90deg);
+    width: 100%;
+    height: 100%;
+};

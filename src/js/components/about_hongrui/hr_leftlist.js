@@ -6,10 +6,10 @@ import Footer from '../public_components/footer';
 import {Router,Route,hashHistory} from 'react-router';
 import HRIntroduction from './hr_introduction';
 import HRSpeech from './hr_speech';
-import HROrganization from './hr_organization';
 import HRQualification from './hr_qualification';
 import styles from '../../../css/about_hongrui.css';
 import Residential from '../industry/residential';
+import HRReputation from './hr_reputation';
 
 const SubMenu = Menu.SubMenu;
 
@@ -51,16 +51,16 @@ export default class HRLeftList extends React.Component {
                     <Col span={3}>
                         <Menu mode="vertical" defaultSelectedKeys={["1"]}>
                             <Menu.Item key="1">
-                            <Link to="/about_hongrui">公司简介</Link>
+                            <Link to="/about_hongrui">企业简介</Link>
                             </Menu.Item>
                             <Menu.Item key="2">
                             <Link to="/about_hongrui/hr_speech">董事长致辞</Link>
                             </Menu.Item>
                             <Menu.Item key="3">
-                            <Link to="/about_hongrui/hr_qualification">公司资质</Link>
+                            <Link to="/about_hongrui/hr_qualification">企业资质</Link>
                             </Menu.Item>
                             <Menu.Item key="4">
-                            <Link to="/about_hongrui/hr_organization">组织结构</Link>
+                            <Link to="/about_hongrui/hr_reputation">企业信誉</Link>
                             </Menu.Item>
                             <Menu.Item key="5">
                             
@@ -84,7 +84,7 @@ export default class HRLeftList extends React.Component {
                             <Route path="/about_hongrui/hr_introduction" component={HRIntroduction}></Route>
                             <Route path="/about_hongrui/hr_speech" component={HRSpeech}></Route>
                             {/* <Route path="/about_hongrui/hr_speech" component={Residential}></Route> */}
-                            <Route path="/about_hongrui/hr_organization" component={HROrganization}></Route>
+                            <Route path="/about_hongrui/hr_reputation" component={HRReputation}></Route>
                             <Route path="/about_hongrui/hr_qualification" component={HRQualification}></Route>
                         </Router>   
                         </div>

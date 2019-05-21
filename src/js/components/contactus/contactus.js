@@ -48,7 +48,7 @@ export default class ContactUs extends  ContentLayout{
                     <img style={map} src="./src/images/location.jpg"/>
                     <h2>北京宏瑞基业建筑工程有限公司</h2>
                     <p/>
-                    地址：北京市大兴区兴华大街5号院 （绿地启航国际12号楼307）
+                    地址：北京市大兴区天华大街5号院 （绿地启航国际12号楼307）
                     <p/>
                     电话：010-89228280
                     <p/>

@@ -33,12 +33,15 @@ export default class HumanResource extends ContentLayout {
         return (
             <div>
                 <div  style={content}>
-                    公司秉承：<h2>一张蓝图绘制到底，精益求精创品忧</h2>
-                    <p/>
-                    <p/>
-                    质优拓市场，诚信赢未来，
-                    人文为准则。在开放式整合，行业整合，信息共享，共赢未来的政策指引下，与行业朋友携手前进。
-                    不忘初心，砥砺前行，为打造业精人和的新型企业而努力奋进
+                    <h1>施工力量 Construction strength</h1>
+                    <p style={{fontSize:17}}>公司拥有施工人员1000人，同时可承接20--50万平米的施工，精细化的管理，专业的施工团队，
+                    质优人和创企业品牌。</p>
+                    <h1>我们的团队</h1>
+                    <p style={{fontSize:17}}>
+                    高学历专业化的建造师、工程师、造价师为先导，技术施工专业化，安全防范为首的庞大的施工队伍，零事故零维修。
+                    </p>
+                    
+                    
                 </div>
             </div>
         );

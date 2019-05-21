@@ -5,10 +5,13 @@ import ContentLayout from '../public_components/content_layout';
 import {Menu,Icon,Tabs,message,Form,Input,Button,Checkbox} from 'antd';
 import MenuItem from 'antd/lib/menu/MenuItem';
 import SubMenu from 'antd/lib/menu/SubMenu';
-import Hold from './Hold';
-import Introduction from './Introduction';
 import {Router,Route,hashHistory, Redirect} from 'react-router';
 import {Link} from 'react-router';
+import Mission from './mission';
+import Vision from './vision';
+import Purpose from './purpose';
+import Value from './value';
+import BussPh from './business_philosophy';
 
 const URL = [
     '/culture',
@@ -42,12 +45,24 @@ export default class Culture extends ContentLayout {
                         key='1'
                         title="企业文化" >
                         <MenuItem key="1">
-                            公司简介
-                            <Link to="/culture/introduction"/>
+                            企业使命
+                            <Link to="/culture/mission"/>
                         </MenuItem>
                         <MenuItem key="2">
-                            企业秉承
-                            <Link to="/culture/hold"/>
+                            企业愿景
+                            <Link to="/culture/vision"/>
+                        </MenuItem>
+                        <MenuItem key="3">
+                            企业宗旨
+                            <Link to="/culture/purpose"/>
+                        </MenuItem>
+                        <MenuItem key="4">
+                            企业价值观
+                            <Link to="/culture/value"/>
+                        </MenuItem>
+                        <MenuItem key="5">
+                            企业经营理念
+                            <Link to="/culture/business_philosophy"/>
                         </MenuItem>
                     </SubMenu>
 
@@ -71,9 +86,12 @@ export default class Culture extends ContentLayout {
                 <div  style={content}>
                 <Router history={hashHistory}>
                         {/* <Route path="/culture" component={Introduction}></Route> */}
-                        <Redirect from="/culture" to="/culture/introduction" />
-                        <Route path="/culture/introduction" component={Introduction}></Route>
-                        <Route path="/culture/hold" component={Hold}></Route>
+                        <Redirect from="/culture" to="/culture/mission" />
+                        <Route path="/culture/mission" component={Mission}></Route>
+                        <Route path="/culture/vision" component={Vision}></Route>
+                        <Route path="/culture/purpose" component={Purpose}></Route>
+                        <Route path="/culture/value" component={Value}></Route>
+                        <Route path="/culture/business_philosophy" component={BussPh}></Route>
                 </Router>
                 </div>
             </div>
