@@ -30,23 +30,23 @@ export default class BussinessShower extends React.Component {
             picLists: [
                 {
                     list: [
-                        "./src/images/construct1.jpeg",
-                        "./src/images/construct2.jpeg",
-                        "./src/images/construct3.jpeg",
+                        './src/images/buildings/beijingxinjichanganzhifang.jpg',
+                        './src/images/buildings/chaobaihekongquecheng.jpg',
+                        "./src/images/buildings/niutuowenquankongquechenghongquanyuan.jpg",
                     ],
                 },
                 {
                     list: [
-                        "./src/images/infras1.jpeg",
-                        "./src/images/infras2.jpeg",
-                        "./src/images/infras3.jpeg",
+                        "./src/images/infrastructure/1.jpg",
+                        "./src/images/infrastructure/2.jpg",
+                        "./src/images/infrastructure/3.jpg",
                     ]
                 },
                 {
                     list: [
-                        "./src/images/protect1.jpeg",
-                        "./src/images/protect2.jpeg",
-                        "./src/images/protect3.jpeg",
+                        "./src/images/products/1.jpg",
+                        "./src/images/products/2.jpg",
+                        "./src/images/products/3.jpg",
                     ]
                 }
             ],
