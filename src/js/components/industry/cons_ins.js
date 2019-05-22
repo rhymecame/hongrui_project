@@ -11,6 +11,9 @@ import Residential from './residential';
 import CityComplex from './city_complex';
 import SafeHouse from './safe_house';
 import ConsInsOverview from './consins_overview';
+import BuildingMaterials from './product_show';
+import ProductShowPage from './product_show';
+import ProductDetail from './product_detail';
 
 export default class ConsIns extends ContentLayout{
 
@@ -27,54 +30,21 @@ export default class ConsIns extends ContentLayout{
                         key='1'
                         title="建筑安装" >
                         <MenuItem class="left_menu"  key="1">
-                            民用建筑
-                            <Link to="/industry/cons_ins/view1"/>
+                            建筑材料系列
+                            <Link to={{pathname: "/industry/cons_ins/view1", query:{id:1}}}/>
                         </MenuItem>
                         <MenuItem class="left_menu"  key="2">
-                            工业建筑
-                            <Link to="/industry/cons_ins/view2"/>
+                            保温板
+                            <Link to={{pathname: "/industry/cons_ins/view2", query:{id:2}}}/>
                         </MenuItem>
                         <MenuItem class="left_menu"  key="3">
-                            机电安装
-                            <Link to="/industry/cons_ins/view3"/>
+                            EPS造型系列
+                            <Link to={{pathname: "/industry/cons_ins/view3", query:{id:3}}}/>
                         </MenuItem>
                         <MenuItem class="left_menu"  key="4">
-                            市政路桥
-                            <Link to="/industry/cons_ins/view4"/>
+                            保温一体化
+                            <Link to={{pathname: "/industry/cons_ins/view4", query:{id:4}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="5">
-                            装饰装修
-                            <Link to="/industry/cons_ins/view5"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="6">
-                            建筑幕墙
-                            <Link to="/industry/cons_ins/view6"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="7">
-                            地基与基础
-                            <Link to="/industry/cons_ins/view7"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="8">
-                            钢结构
-                            <Link to="/industry/cons_ins/view8"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="9">
-                            新型建材
-                            <Link to="/industry/cons_ins/view9"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="10">
-                            古建园林
-                            <Link to="/industry/cons_ins/view10"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="11">
-                            楼宇工程
-                            <Link to="/industry/cons_ins/view11"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="12">
-                            BOT工程
-                            <Link to="/industry/cons_ins/view12"/>
-                        </MenuItem>
-                        
                     </SubMenu>
 
                 </Menu>
@@ -99,19 +69,10 @@ export default class ConsIns extends ContentLayout{
                 <div  style={content}>
                 <Router history={hashHistory}>
                         <Route path="/industry/cons_ins" component={ConsInsOverview}></Route>
-                        <Route path="/industry/cons_ins/view1" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view2" component={CityComplex}></Route>
-                        <Route path="/industry/cons_ins/view3" component={SafeHouse}></Route>
-                        <Route path="/industry/cons_ins/view4" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view5" component={CityComplex}></Route>
-                        <Route path="/industry/cons_ins/view6" component={SafeHouse}></Route>
-                        <Route path="/industry/cons_ins/view7" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view8" component={CityComplex}></Route>
-                        <Route path="/industry/cons_ins/view9" component={SafeHouse}></Route>
-                        <Route path="/industry/cons_ins/view10" component={Residential}></Route>
-                        <Route path="/industry/cons_ins/view11" component={CityComplex}></Route>
-                        <Route path="/industry/cons_ins/view12" component={SafeHouse}></Route>
-                        
+                        <Route path="/industry/cons_ins/view1" component={ProductShowPage}></Route>
+                        <Route path="/industry/cons_ins/view2" component={ProductShowPage}></Route>
+                        <Route path="/industry/cons_ins/view3" component={ProductShowPage}></Route>
+                        <Route path="/industry/cons_ins/view4" component={ProductShowPage}></Route>
                 </Router>
                 </div>
             </div>

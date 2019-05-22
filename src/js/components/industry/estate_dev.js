@@ -26,16 +26,12 @@ export default class EstateDev extends ContentLayout{
                         key='1'
                         title="地产开发" >
                         <MenuItem class="left_menu"  key="1">
-                            保障房
-                            <Link to="/industry/estate_dev/safe_house"/>
+                            学校
+                            <Link to={{pathname:"/industry/estate_dev/residential" ,query:{id:1}}}/>
                         </MenuItem>
                         <MenuItem class="left_menu"  key="2">
-                            城市综合体
-                            <Link to="/industry/estate_dev/city_complex"/>
-                        </MenuItem>
-                        <MenuItem class="left_menu"  key="3">
                             住宅
-                            <Link to="/industry/estate_dev/residential"/>
+                            <Link to={{pathname:"/industry/estate_dev/residential" ,query:{id:2}}}/>
                         </MenuItem>
                         
                     </SubMenu>
@@ -62,8 +58,8 @@ export default class EstateDev extends ContentLayout{
                 <div  style={content}>
                 <Router history={hashHistory}>
                         <Route path="/industry/estate_dev" component={EstateDevOverview}></Route>
-                        <Route path="/industry/estate_dev/safe_house" component={SafeHouse}></Route>
-                        <Route path="/industry/estate_dev/city_complex" component={CityComplex}></Route>
+                        {/* <Route path="/industry/estate_dev/safe_house" component={SafeHouse}></Route>
+                        <Route path="/industry/estate_dev/city_complex" component={CityComplex}></Route> */}
                         <Route exact path="/industry/estate_dev/residential" component={Residential}></Route>
                 </Router>
                 </div>

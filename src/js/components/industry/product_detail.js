@@ -6,7 +6,7 @@ import {Menu,Icon,Tabs,message,Form,Input,Button,Checkbox} from 'antd';
 import MenuItem from 'antd/lib/menu/MenuItem';
 import SubMenu from 'antd/lib/menu/SubMenu';
 import {Row,Col} from 'antd';
-import {estateDevData} from './display_data';
+import {productData} from './display_data';
 
 const img = {
     width:"100%",
@@ -15,7 +15,7 @@ const img = {
 
 
 
-export default class ResidentialDetail extends React.Component {
+export default class ProductDetail extends React.Component {
 
     constructor(props){
         super(props);
@@ -34,7 +34,7 @@ export default class ResidentialDetail extends React.Component {
     }
 
     initData(){
-        let display_data = estateDevData[this.state.type];
+        let display_data = productData[this.state.type];
 
         display_data.forEach(ele => {
             if(ele.id == this.state.id){

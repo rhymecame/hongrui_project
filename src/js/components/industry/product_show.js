@@ -4,7 +4,7 @@ import Item from 'antd/lib/list/Item';
 import styles from '../../../css/industry.css';
 import { Pagination } from 'antd';
 import {Link} from 'react-router';
-import {estateDevData} from './display_data';
+import {productData} from './display_data';
 
 // const real_content = {
 //     height:"400px",
@@ -21,13 +21,15 @@ let img = {
     width:"100%",
 }
 
-export default class Residential extends React.Component{
 
+export default class ProductShowPage extends React.Component{
 
     
     render(){
         let id = this.props.location.query.id;
-        let display_data = estateDevData[id];
+        let display_data = productData[id];
+
+
         return (
             <div>
                 
@@ -37,7 +39,7 @@ export default class Residential extends React.Component{
                     renderItem={item =>(
                         <List.Item>
                             <Card headStyle={{textAlign:"center"}} title={item.title}>
-                                <Link to={{pathname:"/residential_details",query:{id:item.id,type:item.type}}}target="_blank">
+                                <Link to={{pathname:"/product_details",query:{id:item.id,type:item.type}}}target="_blank">
                                 <img style={img} src={item.imglocal_url}></img></Link>
                             </Card>
                         </List.Item>

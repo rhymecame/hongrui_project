@@ -13,6 +13,7 @@ import NewsCenter from "../news_center/news_center";
 import ResidentialDetail from "../industry/residential_detail";
 import Footer from './footer';
 import Header from './header';
+import ProductDetail from '../industry/product_detail';
 
 export default class RouterSwitcher extends React.Component{
     constructor(props){
@@ -44,6 +45,7 @@ export default class RouterSwitcher extends React.Component{
             {/* 下面的**用于匹配路径，具体使用可以查，使得该页面下也可以跳转到新闻详情下去 */}
             <Route path="/news_center(/**)" component={NewsCenter}></Route>
             <Route path="/residential_details" component={ResidentialDetail}></Route>
+            <Route path="/product_details" component={ProductDetail}></Route>
             </Router>
             <Footer></Footer>
         </div>
