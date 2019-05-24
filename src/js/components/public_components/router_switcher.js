@@ -16,34 +16,35 @@ import Header from './header';
 import ProductDetail from '../industry/product_detail';
 
 export default class RouterSwitcher extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            location: '',
-        }
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.state={
+    //         location: '',
+    //     }
+    // }
 
     render(){
         
         //每当当前路径和保存的路径不一样时才刷新，避免无限刷新
         //向header中传入当前的路径，以供选择menu被选取的状态
-        console.log(this.state.location+'1');
+        // console.log(this.state.location+'1');
         console.log(this.props.location.pathname+'2');
-        if(this.state.location!=this.props.location.pathname){
-            this.setState({
-                location: this.props.location.pathname
+        // if(this.state.location!=this.props.location.pathname){
+        //     this.setState({
+        //         location: this.props.location.pathname
 
-            },()=>{
-                console.log(this.state.location+'3');
+        //     },()=>{
+        //         console.log(this.state.location+'3');
 
-            })
+        //     })
             
-        }
-        console.log(this.state.location+'4');
+        // }
+        // console.log(this.state.location+'4');
 
         return (
         <div>
-            <Header location={this.state.location}></Header>
+            {/* <Header location={this.state.location}></Header> */}
+            <Header location={this.props.location.pathname}></Header>
             <Router history={hashHistory}>
             <Route path="/" component={Index}></Route>
             <Route path="/industry" component={Industry}></Route>

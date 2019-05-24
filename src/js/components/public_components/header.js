@@ -11,34 +11,37 @@ const MenuItemGroup = Menu.ItemGroup;
 
 const pathPrefixs = [
     '',
-    '',
-    'about_hongrui',
-    'industry',
-    'news_center',
-    'culture',
-    'hr',
-    'contact_us',
+    '/',
+    '/about_hongrui',
+    '/industry',
+    '/news_center',
+    '/culture',
+    '/hr',
+    '/contact_us',
 ];
 
 
 
 export default class Header extends React.Component{
-    constructor(props){
-        super(props);
-        this.state ={
-            current:'hongrui',
-            curKey: '0',  //默认放个0，代表哪个项都没选中
-        };
-        this.getCurKey(this.props);
-    };
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         curKey:'1',
+    //     };    
+    //     // this.state ={
+    //     //     curKey: props.location,  //默认放个0，代表哪个项都没选中
+    //     // };
+    //     // this.getCurKey(this.props);
+    // };
 
-    componentWillReceiveProps(nextProps){
-        this.getCurKey(nextProps);
-    }
+    // componentWillReceiveProps(nextProps){
+    //     this.getCurKey(nextProps);
+    // }
 
     getCurKey(props){
         //获得路径中第一个/与第二个/之间的内容，即一级目录
-        let prefix = props.location.split('/')[1];
+        console.log(props.location);
+        let prefix = props.location;
 
         let curKey = '0';
         pathPrefixs.forEach((ele, index) => {
@@ -46,16 +49,14 @@ export default class Header extends React.Component{
                 curKey = ''+index;
             }
         });
-        console.log('curKey='+curKey + ' stateKey='+this.state.curKey);
-        //只有保存的和当前的不一样时才更新state
-        if(curKey != this.state.curKey){
-            console.log('setState');
-            this.setState(
-                {
-                    curKey: curKey
-                }
-            );
-        }
+        // console.log('curKey='+curKey + ' stateKey='+this.state.curKey);
+        // //只有保存的和当前的不一样时才更新state
+        return curKey;
+        // this.setState(
+        //     {
+        //         curKey: curKey
+        //     }
+        // );
     }
 
     setModalVisible(value){
@@ -82,6 +83,7 @@ export default class Header extends React.Component{
         // <Menu.Item key="register" class="register">
         //     <Icon type="appstore"/>注册/登录
         // </Menu.Item>;
+        
 
         return(
             <header>
@@ -99,7 +101,7 @@ export default class Header extends React.Component{
                         id="menuPosition"
                         class="menuPosition" 
                         mode="horizontal" 
-                        selectedKeys = {[this.state.curKey]}
+                        selectedKeys = {[this.getCurKey(this.props)]}
                         // onClick={this.handleClick.bind(this)} 
                         >
                         {/* Menu.Item的key属性是关联Menu的selectedKeys的，一定要保持一致 */}
