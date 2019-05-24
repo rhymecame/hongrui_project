@@ -12,16 +12,19 @@ export default class Footer extends React.Component{
 
         }
 
+        let marginT='40px';
+        let contentColor = '#ffffff'
+
         let info={
             float: 'left',
-            color: '#ffffff',
-            marginTop: '40px',
+            color: contentColor,
+            marginTop: marginT,
         }
 
         let record={
             float: 'right',
-            color: '#ffffff',
-            marginTop: '40px',
+            color: contentColor,
+            marginTop: marginT,
         }
         return(
             <footer style={footer}>
