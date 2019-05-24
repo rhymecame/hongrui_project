@@ -25,11 +25,11 @@ export default class EstateDev extends ContentLayout{
                     <SubMenu 
                         key='1'
                         title="地产开发" >
-                        <MenuItem class="left_menu"  key="1">
+                        <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
                             学校
                             <Link to={{pathname:"/industry/estate_dev/residential" ,query:{id:1}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="2">
+                        <MenuItem class="left_menu"  key="2" style={{fontSize:17}}>
                             住宅
                             <Link to={{pathname:"/industry/estate_dev/residential" ,query:{id:2}}}/>
                         </MenuItem>

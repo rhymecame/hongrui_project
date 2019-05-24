@@ -32,7 +32,7 @@ export default class NewsCenter extends React.Component {
     
     render(){
         return(
-            <div>
+            <div class="whole_container">
                 {this.setHeaderImage()}
                 <Router history={hashHistory}>
                     <Route path="/news_center" component={NewsList}></Route>

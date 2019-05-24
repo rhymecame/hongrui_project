@@ -15,7 +15,7 @@ export default class ContactUs extends  ContentLayout{
             <div>
                 <Menu
                     defaultSelectedKeys={['1']}>
-                    <MenuItem key="1">
+                    <MenuItem key="1" style={{fontSize:17,color:"black"}}>
                         联系我们
                     </MenuItem>
                 </Menu>

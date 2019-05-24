@@ -27,10 +27,20 @@ export default class RouterSwitcher extends React.Component{
         
         //每当当前路径和保存的路径不一样时才刷新，避免无限刷新
         //向header中传入当前的路径，以供选择menu被选取的状态
-        if(this.state.location!=this.props.location.pathname)
+        console.log(this.state.location+'1');
+        console.log(this.props.location.pathname+'2');
+        if(this.state.location!=this.props.location.pathname){
             this.setState({
                 location: this.props.location.pathname
+
+            },()=>{
+                console.log(this.state.location+'3');
+
             })
+            
+        }
+        console.log(this.state.location+'4');
+
         return (
         <div>
             <Header location={this.state.location}></Header>

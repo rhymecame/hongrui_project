@@ -43,6 +43,7 @@ export default class HRLeftList extends React.Component {
     // }
 
     render(){
+
         return(
             <div>
                 {this.setHeaderImage()}
@@ -50,16 +51,16 @@ export default class HRLeftList extends React.Component {
                     <Col span={4}></Col>
                     <Col span={3}>
                         <Menu mode="vertical" defaultSelectedKeys={["1"]}>
-                            <Menu.Item key="1">
+                            <Menu.Item key="1" style={{fontSize:17}}>
                             <Link to="/about_hongrui">企业简介</Link>
                             </Menu.Item>
-                            <Menu.Item key="2">
+                            <Menu.Item key="2" style={{fontSize:17}}>
                             <Link to="/about_hongrui/hr_speech">董事长致辞</Link>
                             </Menu.Item>
-                            <Menu.Item key="3">
+                            <Menu.Item key="3" style={{fontSize:17}}>
                             <Link to="/about_hongrui/hr_qualification">企业资质</Link>
                             </Menu.Item>
-                            <Menu.Item key="4">
+                            <Menu.Item key="4" style={{fontSize:17}}>
                             <Link to="/about_hongrui/hr_reputation">企业信誉</Link>
                             </Menu.Item>
                             <Menu.Item key="5">

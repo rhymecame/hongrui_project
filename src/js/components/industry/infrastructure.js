@@ -25,11 +25,11 @@ export default class Infrastructure extends ContentLayout{
                     <SubMenu style={{fontSize:22}}
                         key='1'
                         title="基础设施" >
-                        <MenuItem class="left_menu"  key="1">
+                        <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
                             停车场
                             <Link to={{pathname: "/industry/infras/item1", query:{id:1}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="2">
+                        <MenuItem class="left_menu"  key="2" style={{fontSize:17}}>
                             管道房
                             <Link to={{pathname: "/industry/infras/item2", query:{id:2}}}/>
                         </MenuItem>

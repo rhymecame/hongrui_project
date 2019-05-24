@@ -12,7 +12,7 @@ export default class HumanResource extends ContentLayout {
             <div>
                 <Menu
                     defaultSelectedKeys={['1']}>
-                    <MenuItem key="1">
+                    <MenuItem key="1" style={{fontSize:17,color:"black"}}>
                         人力资源
                     </MenuItem>
                 </Menu>

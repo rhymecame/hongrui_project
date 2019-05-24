@@ -12,6 +12,7 @@ import Vision from './vision';
 import Purpose from './purpose';
 import Value from './value';
 import BussPh from './business_philosophy';
+import styles from '../../../css/culture.css';
 
 const URL = [
     '/culture',
@@ -44,23 +45,23 @@ export default class Culture extends ContentLayout {
                     <SubMenu 
                         key='1'
                         title="企业文化" >
-                        <MenuItem key="1">
+                        <MenuItem key="1" style={{fontSize:17}}>
                             企业使命
                             <Link to="/culture/mission"/>
                         </MenuItem>
-                        <MenuItem key="2">
+                        <MenuItem key="2" style={{fontSize:17}}>
                             企业愿景
                             <Link to="/culture/vision"/>
                         </MenuItem>
-                        <MenuItem key="3">
+                        <MenuItem key="3" style={{fontSize:17}}>
                             企业宗旨
                             <Link to="/culture/purpose"/>
                         </MenuItem>
-                        <MenuItem key="4">
+                        <MenuItem key="4" style={{fontSize:17}}>
                             企业价值观
                             <Link to="/culture/value"/>
                         </MenuItem>
-                        <MenuItem key="5">
+                        <MenuItem key="5" style={{fontSize:17}}>
                             企业经营理念
                             <Link to="/culture/business_philosophy"/>
                         </MenuItem>
