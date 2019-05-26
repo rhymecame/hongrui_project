@@ -29,7 +29,7 @@ export default class NewContainer extends React.Component {
                     <Col span={24} class="topcontainer">
                         <div>
                             <Carousel  {...settings}>
-                                <div><img style={img} src="./src/images/1.jpg" /></div>
+                                <div><img style={img} src="./src/images/1.png" /></div>
                                 <div><img style={img} src="./src/images/2.png" /></div>
                                 <div><img style={img} src="./src/images/3.jpg" /></div>
                                 <div><img style={img} src="./src/images/4.jpg" /></div>

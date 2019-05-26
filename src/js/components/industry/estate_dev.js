@@ -8,8 +8,16 @@ import styles from '../../../css/industry.css';
 import EstateDevOverview from './estatedev_overview';
 import {Router,Route,hashHistory} from 'react-router';
 import Residential from './residential';
-import CityComplex from './city_complex';
-import SafeHouse from './safe_house';
+import {InsulationData} from './combuniss_data';
+import { List, Card, Row } from 'antd';
+import { Pagination } from 'antd';
+
+
+const paginationProps = {
+    showQuickJumper: true,
+    // simple:true,
+      
+  };
 
 export default class EstateDev extends ContentLayout{
 
@@ -21,20 +29,20 @@ export default class EstateDev extends ContentLayout{
     setMenu(){
         return (
             <div>
-                <Menu mode='inline' defaultOpenKeys={['1']}>
-                    <SubMenu 
+                <Menu mode='inline' defaultOpenKeys={['1']} defaultSelectedKeys={['1']}>
+                    <MenuItem
                         key='1'
-                        title="地产开发" >
-                        <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
+                    >
+                        {/* <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
                             学校
                             <Link to={{pathname:"/industry/estate_dev/residential" ,query:{id:1}}}/>
                         </MenuItem>
                         <MenuItem class="left_menu"  key="2" style={{fontSize:17}}>
                             住宅
                             <Link to={{pathname:"/industry/estate_dev/residential" ,query:{id:2}}}/>
-                        </MenuItem>
-                        
-                    </SubMenu>
+                        </MenuItem> */}
+                        外墙保温
+                    </MenuItem>
 
                 </Menu>
             </div>
@@ -45,26 +53,36 @@ export default class EstateDev extends ContentLayout{
     setContent(){
 
 
-
+        let display_data = InsulationData;
+        let img = {
+            height:"100%",
+            width:"100%",
+        }
         let content = {
             marginTop: '30px',
             marginLeft: '50px',
             width : '80%',
             // height: '600px',
         }
-        
-        return (
-            <div>
-                <div  style={content}>
-                <Router history={hashHistory}>
-                        <Route path="/industry/estate_dev" component={EstateDevOverview}></Route>
-                        {/* <Route path="/industry/estate_dev/safe_house" component={SafeHouse}></Route>
-                        <Route path="/industry/estate_dev/city_complex" component={CityComplex}></Route> */}
-                        <Route exact path="/industry/estate_dev/residential" component={Residential}></Route>
-                </Router>
+            return (
+                <div style={content}>
+                    
+                    <List style={{marginLeft:'15%'}} grid={{gutter:12, column:2}}
+                        dataSource={display_data}
+                        pagination={paginationProps}
+                        renderItem={item =>(
+                            <List.Item>
+                                <Card headStyle={{textAlign:"center"}} title={item.title}>
+                                    {/* <Link to={{pathname:"/residential_details",query:{id:item.id,type:item.type}}}target="_blank"> */}
+                                    <img style={img} src={item.imglocal_url}></img>
+                                </Card>
+                            </List.Item>
+                        )}
+                    />
+                    
                 </div>
-            </div>
-        );
+            );
+        
     
     }
 

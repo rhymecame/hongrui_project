@@ -4,6 +4,11 @@ import Footer from '../public_components/footer';
 import ContentLayout from '../public_components/content_layout';
 import {Menu,Icon,Tabs,message,Form,Input,Button,Checkbox} from 'antd';
 import MenuItem from 'antd/lib/menu/MenuItem';
+import SubMenu from 'antd/lib/menu/SubMenu';
+import {Router,Route,hashHistory, Redirect} from 'react-router';
+import {Link} from 'react-router';
+import OurTeam from './our_team';
+import Recruit from './recruit';
 
 export default class HumanResource extends ContentLayout {
 
@@ -11,10 +16,19 @@ export default class HumanResource extends ContentLayout {
         return (
             <div>
                 <Menu
+                    defaultOpenKeys={['1']}
+                    mode='inline'
                     defaultSelectedKeys={['1']}>
+                <SubMenu 
+                        key='1'
+                        title="人力资源" >
                     <MenuItem key="1" style={{fontSize:17,color:"black"}}>
-                        人力资源
+                        <Link to="/hr/our_team">团队介绍</Link>
                     </MenuItem>
+                    <MenuItem key="2" style={{fontSize:17,color:"black"}}>
+                        <Link to="/hr/recruit">招聘信息</Link>
+                    </MenuItem>
+                </SubMenu>
                 </Menu>
             </div>
         );
@@ -33,15 +47,15 @@ export default class HumanResource extends ContentLayout {
         return (
             <div>
                 <div  style={content}>
-                    <h1>施工力量 Construction strength</h1>
-                    <p style={{fontSize:17}}>公司拥有施工人员1000人，同时可承接20--50万平米的施工，精细化的管理，专业的施工团队，
-                    质优人和创企业品牌。</p>
-                    <h1>我们的团队</h1>
-                    <p style={{fontSize:17}}>
-                    高学历专业化的建造师、工程师、造价师为先导，技术施工专业化，安全防范为首的庞大的施工队伍，零事故零维修。
-                    </p>
-                    
-                    
+                <Router history={hashHistory}>
+                        {/* <Route path="/culture" component={Introduction}></Route> */}
+                        <Redirect from="/hr" to="/hr/our_team" />
+                        <Route path="/hr/our_team" component={OurTeam}></Route>
+                        {/* <Route path="/culture/vision" component={Vision}></Route>
+                        <Route path="/culture/purpose" component={Purpose}></Route> */}
+                        <Route path="/hr/recruit" component={Recruit}></Route>
+                        {/* <Route path="/culture/business_philosophy" component={BussPh}></Route> */}
+                </Router>
                 </div>
             </div>
         );

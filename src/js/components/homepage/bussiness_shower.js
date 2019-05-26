@@ -17,7 +17,7 @@ export default class BussinessShower extends React.Component {
                     index: 0,
                 },
                 {
-                    title: '基础建设',
+                    title: '基础设施',
                     index: 1,
                 },
                 {
@@ -30,23 +30,23 @@ export default class BussinessShower extends React.Component {
             picLists: [
                 {
                     list: [
-                        './src/images/buildings/beijingxinjichanganzhifang.jpg',
-                        './src/images/buildings/chaobaihekongquecheng.jpg',
-                        "./src/images/buildings/niutuowenquankongquechenghongquanyuan.jpg",
+                        './src/images/zhuzhai1.jpg',
+                        './src/images/zhuzhai2.jpg',
+                        "./src/images/zhuzhai3.jpg",
                     ],
                 },
                 {
                     list: [
-                        "./src/images/infrastructure/1.jpg",
-                        "./src/images/infrastructure/2.jpg",
-                        "./src/images/infrastructure/3.jpg",
+                        "./src/images/dimiangongcheng5.jpg",
+                        "./src/images/dimiangongcheng6.jpg",
+                        "./src/images/dimiangongcheng7.jpg",
                     ]
                 },
                 {
                     list: [
-                        "./src/images/products/1.jpg",
-                        "./src/images/products/2.jpg",
-                        "./src/images/products/3.jpg",
+                        "./src/images/zhuangshicailiao1.jpg",
+                        "./src/images/zhuangshicailiao2.jpg",
+                        "./src/images/zhuangshicailiao3.jpg",
                     ]
                 }
             ],

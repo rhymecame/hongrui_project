@@ -14,6 +14,7 @@ import ResidentialDetail from "../industry/residential_detail";
 import Footer from './footer';
 import Header from './header';
 import ProductDetail from '../industry/product_detail';
+import MaterialSupport from '../marerial_support/marerial_support';
 
 export default class RouterSwitcher extends React.Component{
     // constructor(props){
@@ -48,15 +49,16 @@ export default class RouterSwitcher extends React.Component{
             <Router history={hashHistory}>
             <Route path="/" component={Index}></Route>
             <Route path="/industry" component={Industry}></Route>
-            <Route path="/culture(/**)" component={Culture}></Route>
+            <Route exact path="/culture" component={Culture}></Route>
             <Route path="/hr" component={HumanResource}></Route>
             <Route path="/contact_us" component={ContactUs}></Route>
             <Route path="/projectshow" component={ProjectShow}></Route>
             <Route path="/about_hongrui" component={HRLeftList}></Route>
             {/* 下面的**用于匹配路径，具体使用可以查，使得该页面下也可以跳转到新闻详情下去 */}
-            <Route path="/news_center(/**)" component={NewsCenter}></Route>
+            <Route path="/news_center" component={NewsCenter}></Route>
             <Route path="/residential_details" component={ResidentialDetail}></Route>
             <Route path="/product_details" component={ProductDetail}></Route>
+            <Route path="/material_support" component={MaterialSupport}></Route>
             </Router>
             <Footer></Footer>
         </div>

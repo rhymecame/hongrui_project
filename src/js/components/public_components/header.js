@@ -11,13 +11,14 @@ const MenuItemGroup = Menu.ItemGroup;
 
 const pathPrefixs = [
     '',
-    '/',
-    '/about_hongrui',
-    '/industry',
-    '/news_center',
-    '/culture',
-    '/hr',
-    '/contact_us',
+    '',
+    'about_hongrui',
+    'industry',
+    'material_support',
+    'news_center',
+    'culture',
+    'hr',
+    'contact_us',
 ];
 
 
@@ -41,7 +42,7 @@ export default class Header extends React.Component{
     getCurKey(props){
         //获得路径中第一个/与第二个/之间的内容，即一级目录
         console.log(props.location);
-        let prefix = props.location;
+        let prefix = props.location.split('/')[1];
 
         let curKey = '0';
         pathPrefixs.forEach((ele, index) => {
@@ -91,12 +92,12 @@ export default class Header extends React.Component{
                     <Col span={1}></Col>
                     <Col span={4}>
                         <Link to="/" class="logo">
-                            <img src="./src/images/logo.png" alt="logo" ></img>
+                            <img src="./src/images/hr_logo.jpg" alt="logo" ></img>
                             <span>宏瑞基业</span>
                         </Link>
                     </Col>
                     
-                    <Col span={14}>
+                    <Col span={16}>
                         <Menu 
                         id="menuPosition"
                         class="menuPosition" 
@@ -113,24 +114,27 @@ export default class Header extends React.Component{
                             </Menu.Item>
                             <Menu.Item key="3">
                                 
-                                <Link class="link_fontsize" to="/industry">旗下产业</Link>
+                                <Link class="link_fontsize" to="/industry">集团业务</Link>
                             </Menu.Item>
                             <Menu.Item key="4">
-                            <Link class="link_fontsize" to="/news_center">新闻中心</Link>
+                            <Link class="link_fontsize" to="/material_support">材料供应</Link>
                             </Menu.Item>
                             <Menu.Item key="5">
-                            <Link class="link_fontsize" to="/culture">企业文化</Link>
+                            <Link class="link_fontsize" to="/news_center">新闻中心</Link>
                             </Menu.Item>
                             <Menu.Item key="6">
-                            <Link class="link_fontsize" to="/hr">人力资源</Link>
+                            <Link class="link_fontsize" to="/culture">企业文化</Link>
                             </Menu.Item>
                             <Menu.Item key="7">
+                            <Link class="link_fontsize" to="/hr">人力资源</Link>
+                            </Menu.Item>
+                            <Menu.Item key="8">
                             <Link class="link_fontsize" to="/contact_us">联系我们</Link>
                             </Menu.Item>
                             {/* {userShow} */}
                         </Menu>
                     </Col>
-                    <Col span={5}></Col>
+                    <Col span={3}></Col>
                 </Row>
                         {/* <Modal title="办公系统" wrapClassName="vertical-center-modal" visible={this.state.modalVisible}
                         onCancel = {()=>this.setModalVisible(false)}

@@ -35,7 +35,7 @@ export default class NewsCenter extends React.Component {
             <div class="whole_container">
                 {this.setHeaderImage()}
                 <Router history={hashHistory}>
-                    <Route path="/news_center" component={NewsList}></Route>
+                    <Route exact path="/news_center" component={NewsList}></Route>
                     {/* {
                         路径 /news_center/:newsId  匹配后面有参数的路径，并且在后续组件中可以获得该参数
                     } */}

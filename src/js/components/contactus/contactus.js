@@ -50,7 +50,7 @@ export default class ContactUs extends  ContentLayout{
                     <p/>
                     地址：北京市大兴区天华大街5号院 （绿地启航国际12号楼307）
                     <p/>
-                    电话：010-89228280
+                    手机：13717696303
                     <p/>
                     邮箱号：Beijinghrjy@163.com
                 </div>

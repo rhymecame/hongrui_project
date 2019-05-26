@@ -26,8 +26,15 @@ export default class Residential extends React.Component{
 
     
     render(){
+
         let id = this.props.location.query.id;
+        // if(id==undefined){
+        //     id=1;
+        // }
         let display_data = estateDevData[id];
+
+        console.log('this.props.location');
+        console.log(this.props.location);
         return (
             <div>
                 

@@ -46,25 +46,25 @@ export default class Culture extends ContentLayout {
                         key='1'
                         title="企业文化" >
                         <MenuItem key="1" style={{fontSize:17}}>
-                            企业使命
+                            企业标语
                             <Link to="/culture/mission"/>
                         </MenuItem>
-                        <MenuItem key="2" style={{fontSize:17}}>
+                        {/* <MenuItem key="2" style={{fontSize:17}}>
                             企业愿景
                             <Link to="/culture/vision"/>
                         </MenuItem>
                         <MenuItem key="3" style={{fontSize:17}}>
                             企业宗旨
                             <Link to="/culture/purpose"/>
-                        </MenuItem>
+                        </MenuItem> */}
                         <MenuItem key="4" style={{fontSize:17}}>
                             企业价值观
                             <Link to="/culture/value"/>
                         </MenuItem>
-                        <MenuItem key="5" style={{fontSize:17}}>
+                        {/* <MenuItem key="5" style={{fontSize:17}}>
                             企业经营理念
                             <Link to="/culture/business_philosophy"/>
-                        </MenuItem>
+                        </MenuItem> */}
                     </SubMenu>
 
                 </Menu>
@@ -89,10 +89,10 @@ export default class Culture extends ContentLayout {
                         {/* <Route path="/culture" component={Introduction}></Route> */}
                         <Redirect from="/culture" to="/culture/mission" />
                         <Route path="/culture/mission" component={Mission}></Route>
-                        <Route path="/culture/vision" component={Vision}></Route>
-                        <Route path="/culture/purpose" component={Purpose}></Route>
+                        {/* <Route path="/culture/vision" component={Vision}></Route>
+                        <Route path="/culture/purpose" component={Purpose}></Route> */}
                         <Route path="/culture/value" component={Value}></Route>
-                        <Route path="/culture/business_philosophy" component={BussPh}></Route>
+                        {/* <Route path="/culture/business_philosophy" component={BussPh}></Route> */}
                 </Router>
                 </div>
             </div>

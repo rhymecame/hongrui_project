@@ -33,7 +33,7 @@ export default class Footer extends React.Component{
                     <Col span={20} class="footer" >
                         <div>
                         <div style={info}>
-                            Copyright &copy;&nbsp;2019 北京宏瑞基业建筑工程有限公司  地址：北京市大兴区兴华大街（二段）3号院3号楼1层117 电话：010-61198036
+                            Copyright &copy;&nbsp;2019 北京宏瑞基业建筑工程有限公司  地址：北京市大兴区天华大街 5号院12号楼3层307 电话：010-89237907
                         </div>
                         <div style={record}>
                             京ICP备19018591号-1	
