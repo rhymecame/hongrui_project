@@ -18,10 +18,12 @@ export default class GreenWisdom extends ContentLayout{
 
 
     setMenu(){
+        let id = this.getCurrentSelectedId();
+
         return (
             <div>
                 <Menu mode='inline' defaultOpenKeys={['1']}
-                    defaultSelectedKeys = {['1']}>
+                    defaultSelectedKeys = {[id]}>
                     <SubMenu 
                         key='1'
                         title="装饰工程" >

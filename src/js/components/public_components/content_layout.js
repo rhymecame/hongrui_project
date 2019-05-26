@@ -22,6 +22,15 @@ export default class ContentLayout extends React.Component {
 
     }
 
+    //获取当前参数中的id值，一般情况下该值对应menu中被选中的item的key
+    getCurrentSelectedId(){
+        let id= this.props.location.query.id;
+        if(id==undefined){
+            id='1';
+        }
+        return id;
+    }
+
     setHeaderImage(){
         let container = {
             width: '100%',

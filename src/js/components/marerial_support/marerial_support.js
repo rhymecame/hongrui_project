@@ -20,9 +20,11 @@ export default class MaterialSupport extends ContentLayout{
 
 
     setMenu(){
+        let id = this.getCurrentSelectedId();
+
         return (
             <div>
-                <Menu mode='inline' defaultOpenKeys={['1']} defaultSelectedKeys={['1']}>
+                <Menu mode='inline' defaultOpenKeys={['1']} defaultSelectedKeys={[id]}>
                     <SubMenu 
                         key='1'
                         title="材料供应" 

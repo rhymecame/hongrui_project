@@ -69,7 +69,7 @@ export default class DisplayCard extends React.Component {
                     </Col>
                     <Col span={8}>
                         <Card headStyle={{textAlign:"center",fontSize:20}} title="地面工程" bordered={true}>
-                        <Link to="/industry/infrastructure">
+                        <Link to="/industry/infras">
                         <img class="cardimage" alt="example" src="./src/images/infra_begin.jpeg" />
                         </Link>
                         </Card>

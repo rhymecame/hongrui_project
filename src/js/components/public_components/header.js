@@ -93,7 +93,8 @@ export default class Header extends React.Component{
                     <Col span={4}>
                         <Link to="/" class="logo">
                             <img src="./src/images/hr_logo.jpg" alt="logo" ></img>
-                            <span>宏瑞基业</span>
+
+                            <span style={{fontSize: '30px', marginLeft: '15px'}}>宏瑞基业</span>
                         </Link>
                     </Col>
                     

@@ -51,7 +51,7 @@ export default class Infrastructure extends ContentLayout{
         return (
             <div style = {content}>
             <Router history={hashHistory}>
-            <Redirect from="/industry/infrastructure" to='/industry/infras/item1?id=1'></Redirect>
+            <Redirect exact from="/industry/infras" to='/industry/infras/item1?id=1'></Redirect>
             <Route path="/industry/infras/item1" component={InfrastructShowPage}></Route>
             <Route path="/industry/infras/item2" component={InfrastructShowPage}></Route>
             </Router>

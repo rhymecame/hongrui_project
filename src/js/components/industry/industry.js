@@ -18,10 +18,10 @@ export default class Industry extends React.Component {
                 {/* <DisplayCard></DisplayCard> */}
                 <Router history={hashHistory}>
                     <Route exact path="/industry" component={DisplayCard}></Route>
-                    <Route path="/industry/greenwisdom" component={GreenWisdom}></Route>
-                    <Route path="/industry/infrastructure" component={Infrastructure}></Route>
-                    <Route path="/industry/estate_dev" component={EstateDev}></Route>
-                    <Route path="/industry/cons_ins" component={ConsIns}></Route>
+                    <Route path="/industry/greenwisdom(/**)" component={GreenWisdom}></Route>
+                    <Route path="/industry/infras(/**)" component={Infrastructure}></Route>
+                    <Route path="/industry/estate_dev(/**)" component={EstateDev}></Route>
+                    <Route path="/industry/cons_ins(/**)" component={ConsIns}></Route>
                     {/* <Route path="/hr" component={HumanResource}></Route> */}
                 </Router>
                 

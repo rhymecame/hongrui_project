@@ -10,22 +10,45 @@ import {Link} from 'react-router';
 import OurTeam from './our_team';
 import Recruit from './recruit';
 
+const URL = [
+    '/hr',
+    "/hr/our_team",
+    "/hr/recruit",
+]
 export default class HumanResource extends ContentLayout {
 
+
+    getCurrentSelectedId(){
+        let id=1;
+        let pathname = this.props.location.pathname;
+        for(let i=1;i<URL.length;i++){ //如果不匹配，那就是/hr，默认选择1
+            if(pathname==URL[i]){
+                id=i;
+                break;
+             }
+        }
+        id = id.toString();
+        return id;
+    }
+
     setMenu(){
+        let id = this.getCurrentSelectedId();
+        console.log(id);
+
+
         return (
             <div>
                 <Menu
                     defaultOpenKeys={['1']}
                     mode='inline'
-                    defaultSelectedKeys={['1']}>
+                    defaultSelectedKeys={[id]}>
                 <SubMenu 
                         key='1'
                         title="人力资源" >
-                    <MenuItem key="1" style={{fontSize:17,color:"black"}}>
+                    <MenuItem key='1' style={{fontSize:17}}>
                         <Link to="/hr/our_team">团队介绍</Link>
                     </MenuItem>
-                    <MenuItem key="2" style={{fontSize:17,color:"black"}}>
+                    <MenuItem key='2' style={{fontSize:17}}>
                         <Link to="/hr/recruit">招聘信息</Link>
                     </MenuItem>
                 </SubMenu>
@@ -49,7 +72,7 @@ export default class HumanResource extends ContentLayout {
                 <div  style={content}>
                 <Router history={hashHistory}>
                         {/* <Route path="/culture" component={Introduction}></Route> */}
-                        <Redirect from="/hr" to="/hr/our_team" />
+                        <Redirect exact from="/hr" to="/hr/our_team" />
                         <Route path="/hr/our_team" component={OurTeam}></Route>
                         {/* <Route path="/culture/vision" component={Vision}></Route>
                         <Route path="/culture/purpose" component={Purpose}></Route> */}

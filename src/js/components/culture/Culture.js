@@ -13,35 +13,42 @@ import Purpose from './purpose';
 import Value from './value';
 import BussPh from './business_philosophy';
 import styles from '../../../css/culture.css';
+import { element } from 'prop-types';
 
 const URL = [
     '/culture',
-    "/culture/introduction",
-    "/culture/hold",
+    "/culture/mission",
+    "/culture/value",
 ]
 export default class Culture extends ContentLayout {
     constructor(props){
         super(props);
-        this.state={
-            defaultSelectedKeys: ['1'],
-        }
+    }
 
-        let url = this.props.location.pathname;
-        if(url == URL[0] || url == URL[1]){
-            this.state.defaultSelectedKeys = ['1'];
-        }else if(url == URL[2]){
-            this.state.defaultSelectedKeys = ['2'];
+    getCurrentSelectedId(){
+        let id=1;
+        let pathname = this.props.location.pathname;
+        console.log(pathname);
+        for(let i=1;i<URL.length;i++){
+            if(pathname==URL[i]){
+                id=i;
+                break;
+             }
         }
-        console.log(this.props);
+        id = id.toString();
+        return id;
     }
 
     setMenu(){
+    let id=this.getCurrentSelectedId();
+    console.log(id);
+
         return (
             <div>
                 <Menu
                     defaultOpenKeys={['1']}
                     mode='inline'
-                    defaultSelectedKeys={this.state.defaultSelectedKeys}>
+                    defaultSelectedKeys={[id]}>
                     <SubMenu 
                         key='1'
                         title="企业文化" >
@@ -57,7 +64,7 @@ export default class Culture extends ContentLayout {
                             企业宗旨
                             <Link to="/culture/purpose"/>
                         </MenuItem> */}
-                        <MenuItem key="4" style={{fontSize:17}}>
+                        <MenuItem key="2" style={{fontSize:17}}>
                             企业价值观
                             <Link to="/culture/value"/>
                         </MenuItem>
