@@ -6,7 +6,7 @@ import SubMenu from 'antd/lib/menu/SubMenu';
 import {Link} from 'react-router';
 import styles from '../../../css/industry.css';
 import EstateDevOverview from './estatedev_overview';
-import {Router,Route,hashHistory} from 'react-router';
+import {Router,Route,hashHistory, Redirect} from 'react-router';
 import Residential from './residential';
 
 
@@ -68,7 +68,7 @@ export default class ConsIns extends ContentLayout{
             <div>
                 <div  style={content}>
                 <Router history={hashHistory}>
-                        <Route path="/industry/cons_ins" component={ConsInsOverview}></Route>
+                        <Redirect from="/industry/cons_ins" to="/industry/cons_ins/view1?id=1"></Redirect>
                         <Route path="/industry/cons_ins/view1" component={ProductShowPage}></Route>
                         <Route path="/industry/cons_ins/view2" component={ProductShowPage}></Route>
                         <Route path="/industry/cons_ins/view3" component={ProductShowPage}></Route>

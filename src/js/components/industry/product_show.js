@@ -39,8 +39,7 @@ export default class ProductShowPage extends React.Component{
                     renderItem={item =>(
                         <List.Item>
                             <Card headStyle={{textAlign:"center"}} title={item.title}>
-                                <Link to={{pathname:"/product_details",query:{id:item.id,type:item.type}}}target="_blank">
-                                <img style={img} src={item.imglocal_url}></img></Link>
+                                <img style={img} src={item.imglocal_url}></img>
                             </Card>
                         </List.Item>
                     )}
