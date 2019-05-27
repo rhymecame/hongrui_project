@@ -41,13 +41,20 @@ export default class NewsList extends React.Component {
     
     render(){
 
+        let row = {
+            marginBottom:"50px",
+            marginTop:"15px",
+            height:"100%"
+
+        }
+
         return(
-            <div>                
-                <div class="container">
-                <Row class="list_row" style={{marginBottom:50,marginTop:15}}>
+                           
+            <div class="news_container">
+                <Row  style={row}>
                 <Col span={4}></Col>
                 <Col span={16}>
-                <h3 style={{ marginBottom: 16,textAlign:"center",fontSize:24}}>宏瑞要闻</h3>
+                <h3 style={{ marginBottom: 16,textAlign:"center",fontSize:24}}>宏瑞心得</h3>
                     <List
                         // header={<div>Header</div>}
                         // footer={<div>Footer</div>}
@@ -61,8 +68,8 @@ export default class NewsList extends React.Component {
                 </Col>
                 <Col span={4}></Col>
                 </Row>
-                </div>
             </div>
+        
 
         );
     };

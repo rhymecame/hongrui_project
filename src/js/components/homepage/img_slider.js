@@ -29,9 +29,10 @@ export default class ImgSlider extends Component {
       marginBottom: '20px',
     };
     const projectSpan={
-      fontSize:'15px',
+      fontSize:'17px',
       textAlign: 'center',
-      width: '100%'
+      width: '100%',
+      color:'black',
     };
 
 
@@ -58,7 +59,7 @@ export default class ImgSlider extends Component {
     let projectName = projectDetail.map(item=>{return item.projectName});
     return (
       <div className="container" style={container}>
-        <span style={projectShowSpan}>经典工程</span>
+        <span style={{fontSize:21,color:'black'}}>经典工程</span>
         <div style={{height:'20px'}}></div>
         <Carousel {...settings} style={carousel}>
           <div style={block}>

@@ -30,7 +30,7 @@ export default class EstateDev extends ContentLayout{
         return (
             <div>
                 <Menu mode='inline' defaultOpenKeys={['1']} defaultSelectedKeys={['1']}>
-                    <MenuItem
+                    <MenuItem style={{fontSize:17,color:'black'}} 
                         key='1'
                     >
                         {/* <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>

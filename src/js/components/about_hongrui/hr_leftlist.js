@@ -64,7 +64,7 @@ export default class HRLeftList extends React.Component {
                             <Menu.Item key="2" style={{fontSize:17}}>
                             <Link to="/about_hongrui/hr_speech">董事长致辞</Link>
                             </Menu.Item>
-                            <SubMenu key='sub1' title = "企业资质" style={{fontSize:17}}>
+                            <SubMenu key='sub1' title = {<span style={{fontSize:17,color:'black'}}>企业资质</span>} >
                                 <Menu.Item key="3" style={{fontSize:17}}>
                                     <Link to="/about_hongrui/hr_qualification/item?id=3">营业执照</Link>
                                 </Menu.Item>

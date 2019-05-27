@@ -3,8 +3,8 @@
     
 }
 
-.container{
-    height: 600px;
+.news_container{
+    min-height: 600px;
 }
 
 .whole_container{

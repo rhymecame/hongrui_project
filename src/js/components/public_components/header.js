@@ -121,7 +121,7 @@ export default class Header extends React.Component{
                             <Link class="link_fontsize" to="/material_support">材料供应</Link>
                             </Menu.Item>
                             <Menu.Item key="5">
-                            <Link class="link_fontsize" to="/news_center">新闻中心</Link>
+                            <Link class="link_fontsize" to="/news_center">学习心得</Link>
                             </Menu.Item>
                             <Menu.Item key="6">
                             <Link class="link_fontsize" to="/culture">企业文化</Link>
