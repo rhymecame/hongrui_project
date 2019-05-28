@@ -24,7 +24,7 @@ export default class Infrastructure extends ContentLayout{
                     mode='inline'
                     defaultSelectedKeys={['1']}>
                     
-                    <MenuItem key='1' style={{fontSize:17,color:'black'}}>地面工程</MenuItem>
+                    <MenuItem key='1' style={{fontSize:20,color:'black'}}>地面工程</MenuItem>
 
                 </Menu>
             </div>
