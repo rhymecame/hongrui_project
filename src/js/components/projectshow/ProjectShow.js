@@ -21,7 +21,7 @@ export default class ProjectShow extends ContentLayout {
             <div>
                 <Menu
                     defaultSelectedKeys={['1']}>
-                    <MenuItem key="1">
+                    <MenuItem key="1" style={{fontSize:20,color:'black'}}>
                         经典工程
                     </MenuItem>
                 </Menu>
@@ -61,11 +61,11 @@ export default class ProjectShow extends ContentLayout {
                 </div>
 
                 <div style={desc}>
-                    <div>
+                    {/* <div>
                         <h3 style={{display : 'inline'}}>工程名：</h3> {this.state.projectName}
-                    </div>
-                    <p/>
-                    工程介绍：{this.state.projectDesc}
+                    </div> */}
+                    <p style={{fontSize:20,color:'black'}}><span style={{fontSize:20,color:'black'}}>工程名：</span>{this.state.projectName}</p>
+                    <p style={{fontSize:17}}><span style={{color:'black'}}>工程介绍：</span>{this.state.projectDesc}</p>
                 </div>
             </div>
         );

@@ -11,7 +11,7 @@ export default class OurTeam extends React.Component {
     render(){
         let img = {
             width:"100%",
-            height:"280px",
+            height:"360px",
         }
         return (
             <div>

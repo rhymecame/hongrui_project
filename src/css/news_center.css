@@ -10,3 +10,7 @@
 .whole_container{
     min-height:600px;
 }
+
+.in_html p{
+    font-size: 17px;
+}

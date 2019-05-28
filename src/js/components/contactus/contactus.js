@@ -15,7 +15,7 @@ export default class ContactUs extends  ContentLayout{
             <div>
                 <Menu
                     defaultSelectedKeys={['1']}>
-                    <MenuItem key="1" style={{fontSize:17,color:"black"}}>
+                    <MenuItem key="1" style={{fontSize:20,color:"black"}}>
                         联系我们
                     </MenuItem>
                 </Menu>
@@ -35,7 +35,7 @@ export default class ContactUs extends  ContentLayout{
         
         let map = {
             width : '80%',
-            height: 400,
+            height: '100%',
             // backgroundSize: '100% 100%',
             marginBottom:30,
             
@@ -47,12 +47,10 @@ export default class ContactUs extends  ContentLayout{
                 <div style={content}>
                     <img style={map} src="./src/images/location.jpg"/>
                     <h2>北京宏瑞基业建筑工程有限公司</h2>
-                    <p/>
-                    地址：北京市大兴区天华大街5号院 （绿地启航国际12号楼307）
-                    <p/>
-                    手机：13717696303
-                    <p/>
-                    邮箱号：Beijinghrjy@163.com
+                    <p style={{fontSize:17}}>地址：北京市大兴区天华大街5号院 （绿地启航国际12号楼307) </p>
+                    <p style={{fontSize:17}}>手机：13717696303 </p>
+                    <p style={{fontSize:17}}>邮箱号：Beijinghrjy@163.com</p>
+                    
                 </div>
                 
             </div>

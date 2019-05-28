@@ -71,10 +71,10 @@ export default class NewsDetail extends React.Component {
                     <Col span={18} class="midcontainer">
                         <div style={container}>
                             <div style={title}>
-                                <h2 style={{margin:'auto'}}>{this.state.title}</h2>
+                                <h2 style={{margin:'auto',fontSize:21}}>{this.state.title}</h2>
                         </div>
 
-                        <div style={content} dangerouslySetInnerHTML={{__html:this.state.content}}>
+                        <div  class="in_html" style={content} dangerouslySetInnerHTML={{__html:this.state.content}}>
                         </div>
                         </div>
                     </Col>
