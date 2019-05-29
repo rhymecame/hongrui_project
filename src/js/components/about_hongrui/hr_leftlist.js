@@ -12,7 +12,16 @@ import Residential from '../industry/residential';
 import HRReputation from './hr_reputation';
 import QualificationDetail from './qualification_detail';
 import SubMenu from 'antd/lib/menu/SubMenu';
+import BranchDetail from './branch_detail';
 
+URL = [
+    null,
+    "/about_hongrui",
+    "/about_hongrui/hr_speech",
+    null,null,null,null,null,null,
+    "/about_hongrui/hr_reputation",
+    "/about_hongrui/branch",
+]
 
 export default class HRLeftList extends React.Component {
 
@@ -42,22 +51,34 @@ export default class HRLeftList extends React.Component {
     //     }
     // }
 
+    getItemIndex(){
+        for(let i=0;i<URL.length;i++){
+            console.log(this.props.location);
+            if(URL[i]==this.props.location.pathname)
+                return i;
+        }
+    }
+
     render(){
         let id= this.props.location.query.id;
         if(id==undefined){
-            id='1';
+            id = ''+this.getItemIndex();
+            console.log(id);
         }
-        let idNum = parseInt(id);
-        let subMenuopenKeys = (idNum>=3 && idNum <=8)?'sub1':'null';
-        
+        /**
+         *  defaultSelectedKeys与defaultOpenKeys有时候有一部分冲突，
+         *  
+         * */        
         return(
             <div>
                 {this.setHeaderImage()}
                 <Row class="list_row" style={{marginBottom:50,marginTop:30}}>
                     <Col span={4}></Col>
                     <Col span={3}>
-                        <Menu mode="inline" defaultSelectedKeys={[id]}
-                              defaultOpenKeys={[subMenuopenKeys]}>
+                        <Menu mode="inline" 
+                              defaultSelectedKeys={[id]}
+                              defaultOpenKeys={['sub1']}
+                              >
                             <Menu.Item key="1" style={{fontSize:17}}>
                             <Link to="/about_hongrui">企业简介</Link>
                             </Menu.Item>
@@ -88,6 +109,10 @@ export default class HRLeftList extends React.Component {
                             <Menu.Item key="9" style={{fontSize:17}}>
                             <Link to="/about_hongrui/hr_reputation">企业信誉</Link>
                             </Menu.Item>
+
+                            <Menu.Item key="10" style={{fontSize:17}}>
+                            <Link to="/about_hongrui/branch">分公司资质</Link>
+                            </Menu.Item>
                             
                         </Menu>
                     </Col>
@@ -102,6 +127,8 @@ export default class HRLeftList extends React.Component {
                             <Route path="/about_hongrui/hr_reputation" component={HRReputation}></Route>
                             <Route path="/about_hongrui/hr_qualification" component={HRQualification}></Route>
                             <Route path="/about_hongrui/hr_qualification/item" component={QualificationDetail}></Route>
+                            <Route path="/about_hongrui/branch" component={BranchDetail}></Route>
+
                         </Router>   
                         </div>
                     </Col>
