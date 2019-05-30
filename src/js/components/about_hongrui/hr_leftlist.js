@@ -63,8 +63,9 @@ export default class HRLeftList extends React.Component {
         let id= this.props.location.query.id;
         if(id==undefined){
             id = ''+this.getItemIndex();
-            console.log(id);
         }
+
+        let defaultOpenSub = (id>=3 && id<=8)?'sub1':'';
         /**
          *  defaultSelectedKeys与defaultOpenKeys有时候有一部分冲突，
          *  
@@ -77,7 +78,7 @@ export default class HRLeftList extends React.Component {
                     <Col span={3}>
                         <Menu mode="inline" 
                               defaultSelectedKeys={[id]}
-                              defaultOpenKeys={['sub1']}
+                              defaultOpenKeys={[defaultOpenSub]}
                               >
                             <Menu.Item key="1" style={{fontSize:20}}>
                             <Link to="/about_hongrui">企业简介</Link>
