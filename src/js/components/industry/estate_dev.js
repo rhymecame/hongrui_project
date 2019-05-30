@@ -72,7 +72,7 @@ export default class EstateDev extends ContentLayout{
                         pagination={paginationProps}
                         renderItem={item =>(
                             <List.Item>
-                                <Card headStyle={{textAlign:"center"}} title={item.title}>
+                                <Card headStyle={{textAlign:"center",fontSize:20}} title={item.title}>
                                     {/* <Link to={{pathname:"/residential_details",query:{id:item.id,type:item.type}}}target="_blank"> */}
                                     <img style={img} src={item.imglocal_url}></img>
                                 </Card>

@@ -43,9 +43,10 @@ export default class NewContainer extends React.Component {
                         <div class="leftContainer">
                             <div class="carousel2">
                                 <Carousel  {...settings}>
-                                    <div><img class="imghandle" src="./src/images/xuexi1.jpg" /></div>
-                                    <div><img class="imghandle" src="./src/images/xuexi2.jpg" /></div>
-                                    <div><img class="imghandle" src="./src/images/xuexi3.jpg" /></div>
+                                    <div><img class="imghandle" src="./src/images/company1.png" /></div>
+                                    <div><img class="imghandle" src="./src/images/company2.png" /></div>
+                                    <div><img class="imghandle" src="./src/images/company3.png" /></div>
+                                    <div><img class="imghandle" src="./src/images/company4.png" /></div>
                                 </Carousel>
                             </div>
                         </div>

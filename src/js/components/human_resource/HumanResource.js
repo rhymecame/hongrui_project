@@ -45,10 +45,10 @@ export default class HumanResource extends ContentLayout {
                 <SubMenu 
                         key='1'
                         title="人力资源" >
-                    <MenuItem key='1' style={{fontSize:17}}>
+                    <MenuItem key='1' style={{fontSize:20}}>
                         <Link to="/hr/our_team">团队介绍</Link>
                     </MenuItem>
-                    <MenuItem key='2' style={{fontSize:17}}>
+                    <MenuItem key='2' style={{fontSize:20}}>
                         <Link to="/hr/recruit">招聘信息</Link>
                     </MenuItem>
                 </SubMenu>

@@ -27,19 +27,19 @@ export default class GreenWisdom extends ContentLayout{
                     <SubMenu 
                         key='1'
                         title="装饰工程" >
-                        <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="1" style={{fontSize:20}}>
                             商业
                             <Link to={{pathname:"/industry/greenwisdom/estate_dev/residential" ,query:{id:1}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="2" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="2" style={{fontSize:20}}>
                             住宅
                             <Link to={{pathname:"/industry/greenwisdom/estate_dev/residential" ,query:{id:2}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="3" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="3" style={{fontSize:20}}>
                             学校
                             <Link to={{pathname:"/industry/greenwisdom/estate_dev/residential" ,query:{id:3}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="4" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="4" style={{fontSize:20}}>
                             医院
                             <Link to={{pathname:"/industry/greenwisdom/estate_dev/residential" ,query:{id:4}}}/>
                         </MenuItem>

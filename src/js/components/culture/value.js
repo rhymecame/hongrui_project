@@ -19,21 +19,21 @@ export default class Value extends React.Component {
             <div>
                 <Row>
                     <Col span={10}>
-                    <h2>企业价值观</h2>
-                    <p style={{fontSize:17}}>
+                    <h1>企业价值观</h1>
+                    <p style={{fontSize:20}}>
                        全员参与，强化管理。
                     </p>
-                    <p style={{fontSize:17}}>
+                    <p style={{fontSize:20}}>
                        精益求精，铸造品质。
                     </p>
-                    <h2>企业经营理念</h2>
-                    <p style={{fontSize:17}}>
+                    <h1>企业经营理念</h1>
+                    <p style={{fontSize:20}}>
                        为客户创造价值。
                     </p>
-                    <p style={{fontSize:17}}>
+                    <p style={{fontSize:20}}>
                        为员工创造机会。
                     </p>
-                    <p style={{fontSize:17}}>
+                    <p style={{fontSize:20}}>
                        为企业和社会创造效益。
                     </p>
                     </Col>

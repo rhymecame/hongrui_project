@@ -17,14 +17,14 @@ export default class OurTeam extends React.Component {
             <div>
             <Row>
                 <Col>
-                    <h2>施工力量 Construction strength</h2>
-                    <p style={{fontSize:17}}>
+                    <h1>施工力量 Construction strength</h1>
+                    <p style={{fontSize:20}}>
                     公司拥有管理人员48人，施工班组20多个，现场施工人员可达1000人，公司同时可承接20--80万平米的施工，公司秉承“精细化的管理，专业的施工团队，质优人和创企业品牌”。
                     </p>
                 
                     
-                    <h2>我们的团队 Our Team</h2>
-                    <p style={{fontSize:17}}>
+                    <h1>我们的团队 Our Team</h1>
+                    <p style={{fontSize:20}}>
                     高学历专业化的建造师、工程师、设计师、造价师为先导，技术施工专业化，安全防范为首的庞大的施工队伍，零事故零维修。
                     </p>
 

@@ -52,7 +52,7 @@ export default class Culture extends ContentLayout {
                     <SubMenu 
                         key='1'
                         title="企业文化" >
-                        <MenuItem key="1" style={{fontSize:17}}>
+                        <MenuItem key="1" style={{fontSize:20}}>
                             企业标语
                             <Link to="/culture/mission"/>
                         </MenuItem>
@@ -64,7 +64,7 @@ export default class Culture extends ContentLayout {
                             企业宗旨
                             <Link to="/culture/purpose"/>
                         </MenuItem> */}
-                        <MenuItem key="2" style={{fontSize:17}}>
+                        <MenuItem key="2" style={{fontSize:20}}>
                             企业价值观
                             <Link to="/culture/value"/>
                         </MenuItem>

@@ -42,14 +42,14 @@ export default class DisplayCard extends React.Component {
                 <Row gutter={16}>
                     <Col span={4}></Col>
                     <Col span={8}>
-                        <Card headStyle={{textAlign:"center",fontSize:20}} title="装饰工程" bordered={true}>
+                        <Card headStyle={{textAlign:"center",fontSize:22}} title="装饰工程" bordered={true}>
                         <Link to="/industry/greenwisdom">
                         <img class="cardimage" alt="example" src="./src/images/green_wis.jpeg" />
                         </Link>
                         </Card>
                     </Col>
                     <Col span={8}>
-                        <Card headStyle={{textAlign:"center",fontSize:20}} title="防水工程" bordered={true}>
+                        <Card headStyle={{textAlign:"center",fontSize:22}} title="防水工程" bordered={true}>
                         <Link to="/industry/cons_ins">
                         <img class="cardimage" alt="example" src="./src/images/cons_begin.jpeg" />
                         </Link>
@@ -61,14 +61,14 @@ export default class DisplayCard extends React.Component {
                 <Row gutter={16} style={{marginTop:30}}>
                     <Col span={4}></Col>
                     <Col span={8}>
-                        <Card headStyle={{textAlign:"center",fontSize:20}} title="外墙保温" bordered={true}>
+                        <Card headStyle={{textAlign:"center",fontSize:22}} title="外墙保温" bordered={true}>
                         <Link to="/industry/estate_dev">
                         <img class="cardimage" alt="example" src="./src/images/estate_dev.jpeg" />
                         </Link>
                         </Card>
                     </Col>
                     <Col span={8}>
-                        <Card headStyle={{textAlign:"center",fontSize:20}} title="地面工程" bordered={true}>
+                        <Card headStyle={{textAlign:"center",fontSize:22}} title="地面工程" bordered={true}>
                         <Link to="/industry/infras">
                         <img class="cardimage" alt="example" src="./src/images/infra_begin.jpeg" />
                         </Link>

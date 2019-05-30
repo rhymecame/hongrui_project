@@ -79,13 +79,13 @@ export default class HRLeftList extends React.Component {
                               defaultSelectedKeys={[id]}
                               defaultOpenKeys={['sub1']}
                               >
-                            <Menu.Item key="1" style={{fontSize:17}}>
+                            <Menu.Item key="1" style={{fontSize:20}}>
                             <Link to="/about_hongrui">企业简介</Link>
                             </Menu.Item>
-                            <Menu.Item key="2" style={{fontSize:17}}>
+                            <Menu.Item key="2" style={{fontSize:20}}>
                             <Link to="/about_hongrui/hr_speech">董事长致辞</Link>
                             </Menu.Item>
-                            <SubMenu key='sub1' title = {<span style={{fontSize:17,color:'black'}}>企业资质</span>} >
+                            <SubMenu key='sub1' title = {<span style={{fontSize:20,color:'black'}}>企业资质</span>} >
                                 <Menu.Item key="3" style={{fontSize:17}}>
                                     <Link to="/about_hongrui/hr_qualification/item?id=3">营业执照</Link>
                                 </Menu.Item>
@@ -106,11 +106,11 @@ export default class HRLeftList extends React.Component {
                                 </Menu.Item>
                             </SubMenu>
                             
-                            <Menu.Item key="9" style={{fontSize:17}}>
+                            <Menu.Item key="9" style={{fontSize:20}}>
                             <Link to="/about_hongrui/hr_reputation">企业信誉</Link>
                             </Menu.Item>
 
-                            <Menu.Item key="10" style={{fontSize:17}}>
+                            <Menu.Item key="10" style={{fontSize:20}}>
                             <Link to="/about_hongrui/branch">分公司资质</Link>
                             </Menu.Item>
                             

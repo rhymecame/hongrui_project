@@ -29,23 +29,23 @@ export default class MaterialSupport extends ContentLayout{
                         key='1'
                         title="材料供应" 
                         defaul>
-                        <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="1" style={{fontSize:20}}>
                             保温系列
                             <Link to={{pathname:"/material_support/view" ,query:{id:1}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="2" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="2" style={{fontSize:20}}>
                             砂浆系列
                             <Link to={{pathname:"/material_support/view" ,query:{id:2}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="3" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="3" style={{fontSize:20}}>
                             涂料系列
                             <Link to={{pathname:"/material_support/view" ,query:{id:3}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="4" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="4" style={{fontSize:20}}>
                             腻子系列
                             <Link to={{pathname:"/material_support/view" ,query:{id:4}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="5" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="5" style={{fontSize:20}}>
                             装饰材料
                             <Link to={{pathname:"/material_support/view" ,query:{id:5}}}/>
                         </MenuItem>

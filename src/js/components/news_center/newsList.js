@@ -32,7 +32,7 @@ export default class NewsList extends React.Component {
         let url = '/news_center/news_detail';
         return (
             <List.Item>
-                <Link to={{pathname: url, query: {id: item.id}}} style={{fontSize:17}}>
+                <Link to={{pathname: url, query: {id: item.id}}} style={{fontSize:20}}>
                 {item.title}
                 </Link>
             </List.Item>

@@ -33,15 +33,15 @@ export default class ConsIns extends ContentLayout{
                     <SubMenu 
                         key='1'
                         title="防水工程" >
-                        <MenuItem class="left_menu"  key="1" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="1" style={{fontSize:20}}>
                             屋顶防水
                             <Link to={{pathname: "/industry/cons_ins/view1", query:{id:1}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="2" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="2" style={{fontSize:20}}>
                             地基防水
                             <Link to={{pathname: "/industry/cons_ins/view2", query:{id:2}}}/>
                         </MenuItem>
-                        <MenuItem class="left_menu"  key="3" style={{fontSize:17}}>
+                        <MenuItem class="left_menu"  key="3" style={{fontSize:20}}>
                             室内防水
                             <Link to={{pathname: "/industry/cons_ins/view3", query:{id:3}}}/>
                         </MenuItem>
