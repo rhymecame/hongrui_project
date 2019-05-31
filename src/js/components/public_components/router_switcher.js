@@ -57,6 +57,7 @@ export default class RouterSwitcher extends React.Component{
             <Route path="/about_hongrui" component={HRLeftList}></Route>
             {/* 下面的**用于匹配路径，具体使用可以查，使得该页面下也可以跳转到新闻详情下去 */}
             <Route path="/news_center" component={NewsCenter}></Route>
+            <Route path="/news_center/*" component={NewsCenter}></Route>
             <Route path="/residential_details" component={ResidentialDetail}></Route>
             <Route path="/product_details" component={ProductDetail}></Route>
             <Route path="/material_support" component={MaterialSupport}></Route>
